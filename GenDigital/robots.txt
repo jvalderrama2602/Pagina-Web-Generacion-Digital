@@ -1,0 +1,31 @@
+#
+# robots.txt
+#
+User-agent: *
+
+Disallow: /font-awesome/
+Disallow: /fonts/
+Disallow: /mail/
+Disallow: /blog/wp-admin/
+Disallow: /blog/wp-content/themes/
+Disallow: /blog/wp-includes/
+#
+User-agent: Twitterbot
+allow:/img/twitter/
+allow:/img/
+#
+
+#
+User-agent: Facebot
+allow:/img/twitter/
+allow:/img/
+#
+
+#
+User-agent: Googlebot
+allow:/img/twitter/
+allow:/img/
+allow: /css/
+allow: /js/
+#
+Sitemap: http://www.gendigital.com.ve/sitemap.xml

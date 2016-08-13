@@ -1,0 +1,37 @@
+<Files *.css>
+SetOutputFilter DEFLATE
+</Files>
+<Files *.js>
+SetOutputFilter DEFLATE
+</Files>
+<Files *.jpg>
+SetOutputFilter DEFLATE
+</Files>
+<Files *.JPG>
+SetOutputFilter DEFLATE
+</Files>
+<Files *.png>
+SetOutputFilter DEFLATE
+</Files>
+<Files *.svg>
+SetOutputFilter DEFLATE
+</Files>
+# In
+
+Redirect 301 /gendigital.com.ve/ http://www.gendigital.com.ve/
+Redirect 301 /gendigital.com.ve/blog/ http://www.gendigital.com.ve/blog/
+
+
+<ifmodule mod_expires.c>
+
+ ExpiresActive On
+
+ ExpiresDefault A3600
+
+ <filesmatch ".(jpg|JPG|gif|GIF|png|css|ico|js|svg|woff)$">
+
+  ExpiresDefault "access plus 7 day"
+
+ </filesmatch>
+
+</ifmodule>
