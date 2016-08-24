@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/style.css" rel="stylesheet">
+	<title>Introducción JavaScript</title>
+</head>
+<body>
+ <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+				<h1>
+					JavaScript! <small>Ejemplos básicos de programación</small>
+				</h1>
+			</div>
+			<h2>
+				Introducción a Javascript
+			</h2>
+			<p>
+				Aquí se irán colocando ejemplos de código de JavaScript básico a intermedio. La idea es ir avanzando paso a paso para ser expertos en este maravilloso lenguaje.
+			</p>
+			<!--<p>
+				<a class="btn" href="#">View details »</a>
+			</p>-->
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12">
+			<!-- <div class="page-header">
+				<h1>
+					 <small>JavaScript</small>
+				</h1>
+			</div> -->
+			<h2>
+				Estructuras de control
+			</h2>
+			<p>
+				A continuación conoceremos las estructuras de JavaScript para el control de flujo de un programa
+			</p>
+			<!--<p>
+				<a class="btn" href="#">View details »</a>
+			</p>-->
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel-group" id="panel-795015">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-795015" href="#panel-element-469721">Ejemplos de If</a>
+					</div>
+					<div id="panel-element-469721" class="panel-collapse collapse">
+						<div class="panel-body">
+							<h3>Alternativa simple</h3>
+							<p>Si cumple una alternativa simple</p>
+							<code>if(condicion)<br>
+							{<br>
+								instrucciones<br>
+							}<br>
+
+							</code>
+							
+							<input type="button" class="btn btn-primary name="boton" value="Ejemplo de If" onclick="ejif1()">
+
+							<p id="ejif1">Aqui va el resultado</p>
+					
+							<h3>Código compacto</h3>
+							<p>Si cumple o no una alternativa </p>
+							<code>(condicion) ?	ExpresionVerdadera : ExpresionFalsa	</code><br>
+							
+							<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de If" onclick="ejif2()">
+
+							<p id="ejif2">Aqui va el resultado</p>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-795015" href="#panel-element-631558">Ejemplos de Switch</a>
+					</div>
+					<div id="panel-element-631558" class="panel-collapse collapse">
+						<div class="panel-body">
+							<h3>Alternativa Compleja</h3>
+							<p>Muchas Alternativas</p>
+							<code>switch(expresion)<br>
+								{<br>
+									case valor1: bloque1; break;<br>
+									case valor2: bloque2; break;<br>
+									case valor3: bloque3; break;<br>
+									case valor4: bloque4; break;<br>
+									default: bloqueDefault;<br>
+								}<br>
+
+							</code><br>
+							
+							<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de Switch" onclick="ejswitch()">
+
+							<p id="ejswitch">Aqui va el resultado</p>
+							
+		
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-795015" href="#panel-element-631559">Ejemplos de While</a>
+					</div>
+					<div id="panel-element-631559" class="panel-collapse collapse">
+						<div class="panel-body">
+							<h3>Bucles</h3>
+							<p>Bucle si se cumple condición</p>
+							<code>while(condicion)<br>
+								{<br>
+									Instrucciones<br>
+								}<br>
+
+							</code><br>
+							
+							<input class="btn btn-primary"  type="button" name="boton" value="Ejemplo de While" onclick="ejwhile()">
+							
+		
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			
+		</div>
+		<div class="col-md-4">
+			<div class="panel-group" id="panel-795016">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title" data-toggle="collapse" data-parent="#panel-795016" href="#panel-element-469722">Ejemplos de Do.. While</a>
+					</div>
+					<div id="panel-element-469722" class="panel-collapse collapse">
+						<div class="panel-body">
+							<h3>Bucle</h3>
+							<p>Se ejecuta como minimo una vez</p>
+							<code>do<br>
+								{<br>
+									Instrucciones<br>
+								}<br>
+								while(condicion)
+							</code><br>
+							
+							<input  class="btn btn-primary" type="button" name="boton" value="Ejemplo de Do While" onclick="ejdowhile()">
+
+							
+
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-795016" href="#panel-element-631560">Ejemplos de For</a>
+					</div>
+					<div id="panel-element-631560" class="panel-collapse collapse">
+						<div class="panel-body">
+							<h3>Bucle</h3>
+							<p>Se ejecuta las veces que le indiquemos</p>
+							<code>for (variable=ValorInicial; condicion; Incremento)<br>
+								{<br>
+									Instrucciones;<br>
+								}<br>
+								
+							</code><br>
+							
+							<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de For" onclick="ejfor()">
+							<ul id="ejfor">
+								
+							</ul>
+
+							
+		
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-795016" href="#panel-element-631561">Ejemplos de For in</a>
+					</div>
+					<div id="panel-element-631561" class="panel-collapse collapse">
+						<div class="panel-body">
+							<h3>Bucle</h3>
+							<p>Simplificación del bucle for, aplicado a arreglos</p>
+							<code>for (variable in [objeto|array])<br>
+								{<br>
+									Instrucciones;<br>
+								}<br>
+								
+							</code><br>
+							
+							<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de For in" onclick="ejforin()">
+							<ul id="ejforin">
+								
+							</ul>	
+							
+		
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div><!-- Fin col-md-4 -->
+
+
+
+
+		<div class="col-md-4">
+			<div class="panel-group" id="panel-795017">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-795017" href="#panel-element-569722">Ejemplos de Arrays</a>
+					</div>
+					<div id="panel-element-569722" class="panel-collapse collapse">
+						<div class="panel-body">
+							<h3>Arreglos</h3>
+							<p>Creación de un Array</p>
+							<code>var miArray = new Array (numeroElementos)<br>
+								
+								
+							</code><br>
+							
+							<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de Array" onclick="ejarray()">
+							<ul id="ejarray">
+								
+							</ul>		
+
+
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-795017" href="#panel-element-731560">Ejemplos de El Objeto Array</a>
+					</div>
+					<div id="panel-element-731560" class="panel-collapse collapse">
+						<div class="panel-body">
+								<h3>Propiedades del Objeto</h3>
+								<p>Length</p>
+								<code>var miArray = new Array (numeroElementos)<br>
+									miArray.length
+								</code><br>
+								<h4>En el array:  "Escocia","Venezuela","Chile","Perú" lenght devuelve la longitud de caracteres.</h4>
+								<input  class="btn btn-primary" type="button" name="boton" value="Ejemplo de Length" onclick="length()">
+								<ul id="length">
+								</ul>
+
+								<h3>Métodos del Objeto</h3>
+								<h4>En el array 1:  "Escocia","Venezuela","Chile","Perú"</h4>
+								<h4>En el array 2:  "España","Dinamarca","Ecuador","Argentina"</h4>
+								<p>concat() Une dos arrays y devuelve el resultado en un array</p>
+								<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de Array.Concat()" onclick="concat()">
+								<ul id="concat">
+								</ul>		
+								<br>
+
+								<h4>En el array:  "Escocia","Venezuela","Chile","Perú"</h4>
+								<p>join() devuelve la cadena de texto que contiene la unión de los elementos de un array</p>
+								<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de Array.Join()" onclick="join()">
+								<ul id="join">
+								</ul>		
+								<br>
+
+								<h4>En el array:  "Escocia","Venezuela","Chile","Perú"</h4>
+								<p>pop() Devuelve y borra el último elemento</p>
+								<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de Array.pop()" onclick="pop()">
+								<ul id="pop">
+								</ul>		
+								<br>
+
+								<h4>En el array:  "Escocia","Venezuela","Chile","Perú"</h4>
+								<p>push() Devuelve y añade un elemento</p>
+								<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de Array.push()" onclick="push()">
+								<ul id="push">
+								</ul>	
+								<br>
+
+								<h4>En el array:  "Escocia","Venezuela","Chile","Perú"</h4>
+								<p>reverse() Refleja el contenido</p>
+								<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de Array.Reverse()" onclick="reverse()">
+								<ul id="reverse">
+								</ul>	
+								<br>
+
+								<h4>En el array:  "Escocia","Venezuela","Chile","Perú"</h4>
+								<p>shift() Devuelve y borra el primer elemento</p>
+								<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de Array.shift())" onclick="shift()">
+								<ul id="shift">
+								</ul>
+								<br>
+
+								<h4>En el array:  "Escocia","Venezuela","Chile","Perú"</h4>
+								<p>slice() Extrae una sección del array y la devuelve como una nuevo</p>
+								<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de Array.slice(1,3))" onclick="slice()">
+								<ul id="slice">
+								</ul>
+								<br>
+
+								<h4>En el array:  "Escocia","Venezuela","Chile","Perú"</h4>
+								<p>splice() Añade y/o elimina elementos</p>
+								<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de Array.splice(2,0,'Canada','Dinamarca'))" onclick="splice()">
+								<ul id="splice">
+								</ul>
+								<br>
+
+								<h4>En el array:  "Escocia","Venezuela","Chile","Perú"</h4>
+								<p>sort() Ordena los elementos</p>
+								<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de Array.Sort()" onclick="sort()">
+								<ul id="sort">
+								</ul>	
+								<br>
+
+								<h4>En el array:  "Escocia","Venezuela","Chile","Perú"</h4>
+								<p>toString() Devuelve la cadena que representa</p>
+								<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de Array.toString()" onclick="tostring()">
+								<ul id="tostring">
+								</ul>	
+								<br>
+
+								<h4>En el array:  "Escocia","Venezuela","Chile","Perú"</h4>
+								<p>unShift() Añade uno o más elementos al inicio y devuelve el número de elementos actualizados</p>
+								<input class="btn btn-primary" type="button" name="boton" value="Ejemplo de Array.unShift()" onclick="unshift()">
+								<ul id="unshift">
+								</ul>	
+								<br>
+								</ul>			
+						</div> <!-- fin panel-body -->
+					</div> <!-- panel-element -->
+				</div> <!-- panel-default -->
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-795017" href="#panel-element-731561">Practica</a>
+					</div>
+					<div id="panel-element-731561" class="panel-collapse collapse">
+						<div class="panel-body">
+							<h3> Calculadora</h3>
+							<input class="btn btn-primary" type="button" name="boton" value="Ejecutar Calculadora" onclick="calculadora()">
+							<script type="text/javascript">
+								
+								function calculadora(){
+								var operacion,numero1,numero2;
+								var aux="";
+								do
+								{
+									numero1=prompt("Introduzca el primer numero 1","");
+									if(isNaN(numero1)){
+										alert("El valor introducido no es correcto");
+									}
+								}while(isNaN(numero1))
+								do
+								{
+									numero2=prompt("Introduzca el primer numero 2","");
+									if(isNaN(numero2)){
+										alert("El valor introducido no es correcto");
+									}
+								}while(isNaN(numero2))
+								
+								numero1=parseInt(numero1);
+								numero2=parseInt(numero2);
+
+								while(aux!=1){
+									operacion=prompt("Listado de operaciones: \n + sumar \n - restar \n * Multiplicación \n / dividir \ % modulo","");
+
+									switch(operacion)
+									{
+										case "+": alert(numero1+numero2);aux=1;break;
+										case "-": alert(numero1-numero2);aux=1;break;
+										case "*": alert(numero1*numero2);aux=1;break;
+										case "/": alert(numero1/numero2);aux=1;break;
+										case "%": alert(numero1%numero2);aux=1;break;
+										default: alert("La operacion no existe")
+									}
+								}
+							};
+							</script>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+			</div>	<!-- panel-group -->	
+		</div> <!-- Fin col-md-4  -->
+	</div><!-- Fin row --> 
+</div><!-- container --> 
+
+
+ <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<!-- <div class="page-header">
+				<h1>
+					 <small>JavaScript</small>
+				</h1>
+			</div> -->
+			<h2>
+				Funciones
+			</h2>
+			<p>
+				Elemento indispensable cuando nuestros proyectos comienzan a crecer y a su vez avanza en complejidad.
+			</p>
+			<code>
+				function nombreFuncion (argumentos)<br>
+				{<br>
+
+				instrucciones<br>
+				[return valor;]<br>
+				
+				}<br>
+			</code>
+		</div><!-- Fin col-md-12 -->
+	</div><!-- Fin row -->
+</div><!-- container --> 
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<!-- <div class="page-header">
+				<h1>
+					 <small>JavaScript</small>
+				</h1>
+			</div> -->
+			<h2>
+				Calculadora usando funciones y el manipulando el DOM
+			</h2>
+			
+			<code>
+				function nombreFuncion (argumentos)<br>
+				{<br>
+
+				instrucciones<br>
+				[return valor;]<br>
+				
+				}<br>
+			</code>
+		</div><!-- Fin col-md-12 -->
+	</div><!-- Fin row -->
+</div><!-- container --> 
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<form role="form">
+				<div class="form-group">
+					 
+					<label for="exampleInputEmail1">
+						Ingrese un primer valor
+					</label>
+					<input class="form-control" id="exampleInputEmail1" type="text" />
+				</div>
+				<div class="form-group">
+					 
+					<label for="exampleInputPassword1">
+						Ingrese un segundo valor
+					</label>
+					<input class="form-control" id="exampleInputPassword1" type="text" />
+				</div>
+				<div class="form-group">
+					 
+					<label for="exampleInputFile">
+						Seleccione operación
+					</label>
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Sumar" />
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Resta" />
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Dividir" />
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Multiplicar" />
+					<p class="help-block">
+						Mismo ejemplo de calculador pero usando el DOM.
+					</p>
+				</div>
+				
+				
+			</form>
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+	
+
+<script type="text/javascript">
+		function ejif1(){	
+		var respuesta=prompt("Introduce una palabra","");	
+		if(respuesta){
+			document.getElementById("ejif1").innerHTML=respuesta;
+		
+		}else{
+			document.getElementById("ejif1").innerHTML="No introdujo nada";
+
+		}
+		};
+
+		function ejif2(){	
+		var respuesta=prompt("Introduce una palabra","");	
+		(respuesta)?document.getElementById("ejif2").innerHTML=respuesta : document.getElementById("ejif2").innerHTML="No introdujo nada";
+
+		};
+
+		function ejswitch(){	
+		var respuesta=prompt("Introduce un numero para saber que día de la semana es:","");	
+
+		switch(parseInt(respuesta)){
+			case 1:
+			document.getElementById("ejswitch").innerHTML="El numero 1 equivale a lunes";
+			break;
+			case 2:
+			document.getElementById("ejswitch").innerHTML="El numero 2 equivale a martes";
+			break;
+			case 3:
+			document.getElementById("ejswitch").innerHTML="El numero 3 equivale a miercoles";
+			break;
+			case 4:
+			document.getElementById("ejswitch").innerHTML="El numero 4 equivale a jueves";
+			break;
+			case 5:
+			document.getElementById("ejswitch").innerHTML="El numero 5 equivale a viernes";
+			break;
+			case 6:
+			case 7:
+			document.getElementById("ejswitch").innerHTML="Es fin de semana";
+			break;
+			default:document.getElementById("ejswitch").innerHTML="Ese día no existe";
+		}
+		};
+
+		function ejwhile(){
+			var contador=1
+			while(contador)
+			{
+				contador=prompt("No escribas nada o pulsa cancelar para salir del bucle While","Si escribes algo no se cerrará la ventana");
+			}
+		};
+
+		function ejdowhile(){
+			var contador;
+			do{
+				contador = prompt("No escribas nada o pulsa cancelar para salir del bucle Do While","Si escribes algo no se cerrará la ventana");
+
+
+			}			
+			while(contador)
+
+
+		};
+
+
+		function ejfor(){
+			var contador =prompt("¿Hasta cuanto quieres que cuente","");
+			for(i=0;i<parseInt(contador);i++)
+
+			{
+				var elemento = document.createElement("li"),
+					contenido=document.createTextNode(i+1);
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("ejfor");
+				padre.appendChild(elemento);
+			}
+
+
+
+		};
+
+		function ejforin(){
+			var nombre = new Array ("Pablo","Juan","David","Pedro");
+			var ciudad=new Array ("Escocia","Venezuela","Chile","Perú");
+
+			for(i in nombre)
+
+			{
+				var elemento = document.createElement("li"),
+					contenido=document.createTextNode(nombre[i]+ " es de " + ciudad[i]);
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("ejforin");
+				padre.appendChild(elemento);
+			}
+
+
+
+		};
+
+		function ejarray(){
+			var nombre = new Array (10);
+			for (i=0;i<=9;i++){
+				nombre[i]=prompt("Introduzca nombre número " + (parseInt(i)+1),"");
+			}
+			i=0;
+			for(i in nombre)
+			{
+				var elemento = document.createElement("li"),
+				contenido=document.createTextNode(nombre[i]+ " es de la posición " + (parseInt(i)+1));
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("ejarray");
+				padre.appendChild(elemento);
+			}
+
+
+
+		};
+
+		function concat(){
+
+			var paises1 = new Array ("Escocia","Venezuela","Chile","Perú");
+			var paises2 = new Array ("España","Dinamarca","Ecuador","Argentina");
+
+			var paises3 =paises1.concat(paises2);
+			for (i in paises3 ){
+			var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises3[i]+" están en el arreglo");
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("concat");
+				padre.appendChild(elemento);
+			}
+
+
+		};
+
+		function length(){
+
+			var paises = new Array ("Escocia","Venezuela","Chile","Perú");
+
+			for (i in paises ){
+			var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises[i]+ " tiene " + paises[i].length + " caracteres");
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("length");
+				padre.appendChild(elemento);
+			}
+		};
+
+
+		function join(){
+
+			var paises = new Array ("Escocia","Venezuela","Chile","Perú");
+
+			
+			var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises.join("-") );
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("join");
+				padre.appendChild(elemento);
+			};
+
+		function reverse(){
+
+			var paises = new Array ("Escocia","Venezuela","Chile","Perú");
+
+			
+			var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises.reverse() );
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("reverse");
+				padre.appendChild(elemento);
+			};
+
+		function sort(){
+
+			var paises = new Array ("Escocia","Venezuela","Chile","Perú");
+
+			
+			var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises.sort() );
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("sort");
+				padre.appendChild(elemento);
+			};
+
+			function pop(){
+
+			var paises = new Array ("Escocia","Venezuela","Chile","Perú");
+
+			
+			var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises.pop() + " fue eliminado del array" );
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("pop");
+				padre.appendChild(elemento);
+
+				for(i in paises){
+				var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises[i] + " estan en el arreglo");
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("pop");
+				padre.appendChild(elemento);
+				}
+			};
+		
+		function push(){
+
+			var paises = new Array ("Escocia","Venezuela","Chile","Perú");
+			var pais=prompt("Introduzca un nuevo pais","Bolivia")
+			
+			var elemento = document.createElement("li"),
+				contenido=document.createTextNode(pais + " se ha agregado correctamente" );
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("push");
+				padre.appendChild(elemento);
+			
+				paises.push(pais)
+			for(i in paises){
+				var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises[i] + " estan en el arreglo");
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("push");
+				padre.appendChild(elemento);	
+
+
+			}
+			};
+
+		function shift(){
+
+			var paises = new Array ("Escocia","Venezuela","Chile","Perú");
+						
+			var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises.shift() + " se ha eliminado correctamente" );
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("shift");
+				padre.appendChild(elemento);
+			
+				
+			for(i in paises){
+				var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises[i] + " estan en el arreglo");
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("shift");
+				padre.appendChild(elemento);	
+
+
+			}
+			};
+
+		function slice(){
+
+			var paises = new Array ("Escocia","Venezuela","Chile","Perú");
+						
+			var elemento = document.createElement("li"),
+				contenido=document.createTextNode( " Se ha creado nuevo array correctamente" );
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("slice");
+				padre.appendChild(elemento);
+			
+			var paises2=paises.slice(1,3);
+			for(i in paises2){
+				var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises2[i] + " estan en el arreglo");
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("slice");
+				padre.appendChild(elemento);	
+
+
+			}
+			};
+
+			function splice(){
+
+			var paises = new Array ("Escocia","Venezuela","Chile","Perú");
+			paises.splice(2,0,'Canada','Dinamarca')			
+			var elemento = document.createElement("li"),
+				contenido=document.createTextNode( "Se ha creado nuevo array correctamente" );
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("splice");
+				padre.appendChild(elemento);
+			
+			
+			for(i in paises){
+				var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises[i] + " estan en el arreglo");
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("splice");
+				padre.appendChild(elemento);	
+			}
+			};
+
+			function tostring(){
+
+			var paises = new Array ("Escocia","Venezuela","Chile","Perú");
+			paises.toString();		
+						
+			for(i in paises){
+				var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises[i] + " estan en el arreglo");
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("tostring");
+				padre.appendChild(elemento);	
+			}
+			};
+
+			function unshift(){
+
+			var paises = new Array ("Escocia","Venezuela","Chile","Perú");
+			paises.unshift("España", "Colombia");		
+						
+			for(i in paises){
+				var elemento = document.createElement("li"),
+				contenido=document.createTextNode(paises[i] + " estan en el arreglo");
+				elemento.appendChild(contenido);
+				var padre= document.getElementById("unshift");
+				padre.appendChild(elemento);	
+			}
+			};
+		
+</script>
+ <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
