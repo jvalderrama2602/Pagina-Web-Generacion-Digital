@@ -460,29 +460,73 @@
 					<label for="exampleInputEmail1">
 						Ingrese un primer valor
 					</label>
-					<input class="form-control" id="exampleInputEmail1" type="text" />
+					<input class="form-control" id="numero01" type="text" />
 				</div>
 				<div class="form-group">
 					 
 					<label for="exampleInputPassword1">
 						Ingrese un segundo valor
 					</label>
-					<input class="form-control" id="exampleInputPassword1" type="text" />
+					<input class="form-control" id="numero02" type="text" />
 				</div>
 				<div class="form-group">
 					 
 					<label for="exampleInputFile">
 						Seleccione operación
 					</label>
-					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Sumar" />
-					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Resta" />
-					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Dividir" />
-					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Multiplicar" />
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Sumar" onclick="calc()" />
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Resta" onclick="calc()"/>
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Dividir" onclick="calc()" />
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Multiplicar" onclick="calc()" />
 					<p class="help-block">
 						Mismo ejemplo de calculador pero usando el DOM.
 					</p>
 				</div>
-				
+				<script type="text/javascript">
+					var numero1= document.getElementById("numero01").value
+					var numero2= document.getElementById("numero02").value
+					var operacion=document.getElementById("exampleInputFile").value
+
+
+								function calc(){
+								/*var operacion,numero1,numero2;*/
+								var aux="";
+								
+									if(isNaN(numero1)){
+										alert("El valor introducido no es correcto");
+										
+									}else{}
+									 if(isNaN(numero2)){
+										alert("El valor introducido no es correcto");
+									}else{
+
+										numero1=parseInt(numero1);
+										numero2=parseInt(numero2);
+
+										while(aux!=1){
+											/*operacion=prompt("Listado de operaciones: \n + sumar \n - restar \n * Multiplicación \n / dividir \ % modulo","");*/
+
+											switch(operacion)
+											{
+												case "Sumar": alert(numero1+numero2);aux=1;break;
+												case "Resta": alert(numero1-numero2);aux=1;break;
+												case "Multiplicar": alert(numero1*numero2);aux=1;break;
+												case "Dividir": alert(numero1/numero2);aux=1;break;
+												/*case "%": alert(numero1%numero2);aux=1;break;*/
+												default: alert("La operacion no existe")
+											}
+										}
+
+
+									}
+																
+								
+								}
+
+
+
+
+				</script>
 				
 			</form>
 		</div>
