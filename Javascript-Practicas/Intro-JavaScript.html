@@ -474,11 +474,11 @@
 					 
 					<label for="exampleInputFile">
 						Seleccione operación
-					</label>
-					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Sumar" onclick="calcSUMA()" />
-					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Resta" onclick="calcRESTA()"/>
-					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Dividir" onclick="calcDIVIDIR()" />
-					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Multiplicar" onclick="calcMULTIPLICAR()" />
+					</label><br>
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Sumar" onclick="calcSUMA()" /><br>
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Resta" onclick="calcRESTA()"/><br>
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Dividir" onclick="calcDIVIDIR()" /><br>
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Multiplicar" onclick="calcMULTIPLICAR()" /><br>
 					<p class="help-block">
 						Mismo ejemplo de calculador pero usando el DOM.
 					</p>
@@ -640,21 +640,78 @@
 		</div>
 		<div class="col-md-4">
 			<h2>
-				Heading
+				Calculando de Factorial
 			</h2>
 			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+				Se usa un tipo de función llamada "Recursiva". Es aquella función que se llama asi misma. <br>
+				<code>
+					function factorial(numero)<br>
+					{<br>
+						if(numero>1)<br>
+						{<br>
+							return numero * factorial(numero-1);<br>
+						}<br>
+						else<br>
+							return numero;<br>
+					}<br>
+				</code>
 			</p>
 			<p>
-				<a class="btn" href="#">View details »</a>
+				<a class="btn" onclick="clickcalculo()" href="#">Efectuar llamada a la función »</a>
 			</p>
+			<script type="text/javascript">
+				function factorial(numero)
+					{
+						if(numero>1)
+						{
+							return numero * factorial(numero-1);
+						}
+						else
+							return numero;
+					}
+			</script>
+
+			<script type="text/javascript">
+				function clickcalculo(){
+				var entero=prompt("Introduce un número entero","");
+					if(isNaN(entero)){
+						alert("El valor introducido no es un número");
+					}
+					else
+					{
+						entero=parseInt(entero);
+						alert("El Factorial de "+ entero+" es igual a "+factorial(entero));
+					}
+
+				}
+			</script>
+
+
+
+
+
 		</div>
 		<div class="col-md-4">
 			<h2>
-				Heading
+				Funciones Predefinidas
 			</h2>
 			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+				Lista de funciones más importantes predefinidas en el lenguaje JS.
+				<ul>
+					<li>parseFloat(cadena) = Devuelve un número en coma flotante(con decimales)</li>
+					<li>parseInt(cadena,base) = Devuelve un numero entero según la base que le pasemos como parámetro</li>
+					<li>toString(argumento) = Devuelve cadenas de texto el argumento</li>
+					<li>typeOf(argumento) = Nos devuelve el tipo de dato que le pasemos como parámetro</li>
+					<li>escape(cadena) = Nos devuelve los codigos de escape de cada uno de los caracteres de la cadena</li>
+					<li>unescape(cadena) = Nos devuelve la cadena formada por los caracteres cuyos digitos especificamos </li>
+					<li>isNaN(argumento) = Booleano que nos indica si el argumento es un valor numérico</li>
+					<li>eval(expresion) = Devuelve el resultado de la expresión que le pasemos como parámetro</li>
+
+					
+
+
+
+				</ul>
 			</p>
 			<p>
 				<a class="btn" href="#">View details »</a>
