@@ -461,68 +461,175 @@
 					<label for="exampleInputEmail1">
 						Ingrese un primer valor
 					</label>
-					<input class="form-control" id="numero01" type="text" />
+					<input class="form-control" id="numero11" type="text" />
 				</div>
 				<div class="form-group">
 					 
 					<label for="exampleInputPassword1">
 						Ingrese un segundo valor
 					</label>
-					<input class="form-control" id="numero02" type="text" />
+					<input class="form-control" id="numero22" type="text" />
 				</div>
 				<div class="form-group">
 					 
 					<label for="exampleInputFile">
 						Seleccione operación
 					</label>
-					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Sumar" onclick="calc()" />
-					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Resta" onclick="calc()"/>
-					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Dividir" onclick="calc()" />
-					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Multiplicar" onclick="calc()" />
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Sumar" onclick="calcSUMA()" />
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Resta" onclick="calcRESTA()"/>
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Dividir" onclick="calcDIVIDIR()" />
+					<input id="exampleInputFile" type="button" class="btn btn-primary" value="Multiplicar" onclick="calcMULTIPLICAR()" />
 					<p class="help-block">
 						Mismo ejemplo de calculador pero usando el DOM.
 					</p>
 				</div>
 				<script type="text/javascript">
-					var numero1= document.getElementById("numero01").value
-					var numero2= document.getElementById("numero02").value
-					var operacion=document.getElementById("exampleInputFile").value
+					
 
 
-								function calc(){
+								function calcSUMA(){
+								var numero1= document.getElementById("numero11").value
+								var numero2= document.getElementById("numero22").value
+								var operacion=document.getElementById("exampleInputFile").value
 								/*var operacion,numero1,numero2;*/
-								var aux="";
+								var aux1=0;
+								var aux2=0;
 								
-									if(isNaN(numero1)){
+									if(isNaN(numero1)||numero1==""){
 										alert("El valor introducido no es correcto");
+										aux1=0;
 										
-									}else{
-									 if(isNaN(numero2)){
-										alert("El valor introducido no es correcto");
-									}else{
+									} else{
+										aux1=1;
+									}
 
+									if(isNaN(numero2)||numero2=="") {
+									 	alert("El valor introducido no es correcto");
+									 	aux2=0;
+									 	
+									}else{
+										aux2=1;
+									}
+
+									if (aux1==1&&aux2==1){	
+										
 										numero1=parseInt(numero1);
 										numero2=parseInt(numero2);
 
-										while(aux!=1){
-											/*operacion=prompt("Listado de operaciones: \n + sumar \n - restar \n * Multiplicación \n / dividir \ % modulo","");*/
-
-											switch(operacion)
-											{
-												case "Sumar": alert(numero1+numero2);aux=1;break;
-												case "Resta": alert(numero1-numero2);aux=1;break;
-												case "Multiplicar": alert(numero1*numero2);aux=1;break;
-												case "Dividir": alert(numero1/numero2);aux=1;break;
-												/*case "%": alert(numero1%numero2);aux=1;break;*/
-												default: alert("La operacion no existe")
-											}
-										}
-
-
+											
+										alert(numero1+numero2);aux=1;
+										
 									}
+									}
+
+
+								function calcRESTA(){
+								var numero1= document.getElementById("numero11").value
+								var numero2= document.getElementById("numero22").value
+								var operacion=document.getElementById("exampleInputFile").value
+								/*var operacion,numero1,numero2;*/
+								var aux1=0;
+								var aux2=0;
+								
+									if(isNaN(numero1)||numero1==""){
+										alert("El valor introducido no es correcto");
+										aux1=0;
+										
+									} else{
+										aux1=1;
+									}
+
+									if(isNaN(numero2)||numero2=="") {
+									 	alert("El valor introducido no es correcto");
+									 	aux2=0;
+									 	
+									}else{
+										aux2=1;
+									}
+
+									if (aux1==1&&aux2==1){	
+										
+										numero1=parseInt(numero1);
+										numero2=parseInt(numero2);
+
+											
+										alert(numero1-numero2);aux=1;
+										
+									}
+									}										
+								
+									function calcDIVIDIR(){
+								var numero1= document.getElementById("numero11").value
+								var numero2= document.getElementById("numero22").value
+								var operacion=document.getElementById("exampleInputFile").value
+								/*var operacion,numero1,numero2;*/
+								var aux1=0;
+								var aux2=0;
+								
+									if(isNaN(numero1)||numero1==""){
+										alert("El valor introducido no es correcto");
+										aux1=0;
+										
+									} else{
+										aux1=1;
+									}
+
+									if(isNaN(numero2)||numero2==""||numero2==0) {
+									 	alert("El valor introducido no es correcto o no se puede dividir entre 0");
+									 	aux2=0;
+									 	
+									}else{
+										aux2=1;
+									}
+
+									if (aux1==1&&aux2==1){	
+										
+										numero1=parseFloat(numero1);
+										numero2=parseFloat(numero2);
+										var resultado=numero1/numero2
+										var res=parseFloat(resultado)	
+										alert(res.toFixed(2));aux=1;
+										
+									}
+									}								
+									
+									function calcMULTIPLICAR(){
+								var numero1= document.getElementById("numero11").value
+								var numero2= document.getElementById("numero22").value
+								var operacion=document.getElementById("exampleInputFile").value
+								/*var operacion,numero1,numero2;*/
+								var aux1=0;
+								var aux2=0;
+								
+									if(isNaN(numero1)||numero1==""){
+										alert("El valor introducido no es correcto");
+										aux1=0;
+										
+									} else{
+										aux1=1;
+									}
+
+									if(isNaN(numero2)||numero2==""||numero2==0) {
+									 	alert("El valor introducido no es correcto");
+									 	aux2=0;
+									 	
+									}else{
+										aux2=1;
+									}
+
+									if (aux1==1&&aux2==1){	
+										
+										numero1=parseInt(numero1);
+										numero2=parseInt(numero2);
+
+											
+										alert(numero1*numero2);aux=1;
+										
+									}
+									}								
 																
 								
-								}
+								
 
 
 
