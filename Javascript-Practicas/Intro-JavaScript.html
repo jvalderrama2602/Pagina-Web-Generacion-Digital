@@ -705,9 +705,7 @@
 
 				</ul>
 			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
+			
 		</div>
 	</div>
 </div>
@@ -719,31 +717,61 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						Panel title
+						Objetos en JavaScript
 					</h3>
 				</div>
 				<div class="panel-body">
-					Panel content
+					Función windows.open("http://gendigital.com.ve/","",opciones);
 				</div>
 				<div class="panel-footer">
-					Panel footer
+					<a onclick="abrirventana()">Abre Ventana</a>
 				</div>
+				<script type="text/javascript">
+					function abrirventana(){
+						var opciones="width=750,heigh=350, scrollbars=no";
+						var ventana=window.open("http://www.gendigital.com.ve/","",opciones);
+
+
+					}
+
+
+				</script>
+
+
+
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						Panel title
+						Objetos en JavaScript
 					</h3>
 				</div>
 				<div class="panel-body">
-					Panel content
+					document.write("Path: "+ location.pathname);
 				</div>
 				<div class="panel-footer">
-					Panel footer
+					<a onclick="abrirventana2()">Abre Ventana e indica el path</a>
+					<p id="path"></p>
 				</div>
 			</div>
+			<script type="text/javascript">
+					function abrirventana2(){
+						var opciones="width=750,heigh=350, scrollbars=no";
+						var ventana=window.open("http://www.gendigital.com.ve/","",opciones);
+						document.getElementById("path").innerHTML=location.pathname;
+						/*console.log("Hola"+ location.pathname);
+						/*document.write=(location.pathname);*/
+					}
+
+
+			</script>
+
+
+
+
+
 		</div>
 		<div class="col-md-4">
 			<div class="panel panel-default">
