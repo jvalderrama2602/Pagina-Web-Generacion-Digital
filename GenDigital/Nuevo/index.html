@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Brounie">
+    <meta name="description" content="Hola somos Brounie, un equipo de desarrollo Web y Móvil. Conoce más de nosotros.">
+    <meta itemprop="name" content="Brounie | We Make Apps">
+    <meta itemprop="description" content="This is the page description">
+    <meta itemprop="image" content="http://brounie.com/img/logo_negro_con_letras.png">
+    <meta name="twitter:site" content="Brounie">
+    <meta name="twitter:title" content="Brounie | We Make Apps">
+    <meta name="twitter:description" content="Hola somos Brounie, un equipo de desarrollo Web y Móvil. Conoce más de nosotros.">
+    <meta name="twitter:creator" content="By Brounie">
+    <meta name="twitter:image" content="http://brounie.com/img/share_image.png">
+    <meta property="og:title" content="Brounie">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://www.brounie.com/">
+    <meta property="og:image" content="http://brounie.com/img/share_image.png">
+    <meta property="og:description" content="Hola somos Brounie, un equipo de desarrollo Web y Móvil. Conoce más de nosotros.">
+    <meta property="og:site_name" content="Brounie | We Make Apps">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <title>Brounie | We Make Apps</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css">-->
+    <link href="css/jquery.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+   
+  </head>
+  <body>
+    <div id="content"><a href="#" data-activates="mobile-menu" class="button-collapse mobile-menu-button"><i class="fa fa-bars"></i></a><a href="#modal_contacto" class="btn-floating btn-large blue contact-modal-button waves-effect-waves-light modal-trigger"><i class="fa fa-envelope"> </i></a>
+      <ul id="mobile-menu" class="side-nav">
+        <li><a><img src="img/logo_negro_con_letras.png"></a></li>
+        <li><a href="index.html" class="index-option">Inicio</a></li>
+        <li><a href="servicios.html" class="servicios-option">Servicios</a></li>
+        <li><a href="portafolio.html" class="portafolio-option">Portafolio</a></li>
+        <li><a href="nosotros.html" class="nosotros-option">Nosotros </a></li>
+      </ul>
+      <div class="success-alert">Gracias por escribirnos, pronto te contactaremos :)</div>
+      <div class="error-alert">Si tiene algún problema con el formulario, contactanos directamente al correo :)</div>
+      <div id="modal_contacto" class="modal bottom-sheet">
+        <div class="container"> 
+          <div class="modal-content"><a href="#!" class="modal-close"><i class="fa fa-times"> </i></a>
+            <h2 class="contact-modal-title">Contáctanos</h2>
+            <div class="contact-phone">Tel: +(52) 442 245 3151</div>
+            <div class="row">
+              <form method="post" id="contact-form" action="contact.php" class="col s12 contact-form">
+                <div class="row">
+                  <div class="input-field col m4 s12"><i class="fa fa-user prefix"> </i>
+                    <input id="icon_user" type="text" name="name" required class="validate">
+                    <label for="icon_user">Nombre	</label>
+                  </div>
+                  <div class="input-field col m4 s12"><i class="fa fa-phone prefix"> </i>
+                    <input id="icon_telephone" type="text" required name="tel" class="validate">
+                    <label for="icon_telephone">Teléfono</label>
+                  </div>
+                  <div class="input-field col m4 s12"> <i class="fa fa-envelope prefix"> </i>
+                    <input id="icon_mail" type="email" name="email" required class="validate">
+                    <label for="icon_mail">Email</label>
+                  </div>
+                  <div class="input-field col m12 s12"><i class="fa fa-dollar prefix"></i>
+                    <div class="col m3 title-radio-input s12">Presupuesto:</div>
+                    <div class="col m3 s4">
+                      <input name="budget" type="radio" id="budget_1" value="$10 - $25k" required class="with-gap">
+                      <label for="budget_1">$10k - $25k</label>
+                    </div>
+                    <div class="col m3 s4">
+                      <input name="budget" type="radio" id="budget_2" value="$25 - $50k" class="with-gap">
+                      <label for="budget_2">$25k - $50k </label>
+                    </div>
+                    <div class="col m3 s4">
+                      <input name="budget" type="radio" id="budget_3" value="$50k+" class="with-gap">
+                      <label for="budget_3">$50k+</label>
+                    </div>
+                  </div>
+                  <div class="input-field col m8 s12"><i class="fa fa-comments prefix"></i>
+                    <textarea required name="message" id="contact_message" class="materialize-textarea"></textarea>
+                    <label for="contact_message">Deja tu mensaje</label>
+                  </div>
+                  <div id="captcha1" style="padding-top: 15px" class="col m4 captcha-container"></div>
+                  <div class="input-field col m12 s12">
+                    <button type="submit" class="submit-button btn waves-effect waves-light full-width">Enviar &nbsp  <i class="fa fa-paper-plane"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo-intro">
+        <div><img src="img/logo_negro_con_letras.png" class="logo-change"></div>
+      </div>
+      <div class="menu-intro center-align"><a href="index.html" class="index-option">Inicio</a><a href="servicios.html" class="servicios-option">Servicios</a><a href="portafolio.html" class="portafolio-option">Portafolio</a><a href="nosotros.html" class="nosotros-option">Nosotros</a></div>
+      <div class="menu-intro right-align fixed-s"><a href="index.html" class="logo-menu"><img src="img/logo_negro_con_letras.png" class="logo-change"></a><a href="index.html" class="index-option">Inicio</a><a href="servicios.html" class="servicios-option">Servicios</a><a href="portafolio.html" class="portafolio-option">Portafolio</a><a href="nosotros.html" class="nosotros-option">Nosotros</a></div>
+      <video playsinline autoplay muted id="bgvid" poster="img/background_transparent.png">
+        <source src="video/video_bg_fast.mp4" type="video/mp4">
+      </video>
+      <div id="fullpage">
+        <section data-slide="1" class="intro-home valign-wrapper section">
+          <div class="valign">
+            <h1 class="title-header">Hola</h1>
+            <div class="row">
+              <div class="col m6 offset-m3"> 
+                <p>Somos una empresa de  jóvenes con más de 5 años de experiencia,  centrados en el desarrollo de aplicaciones móviles y web.  Somos un grupo de Ingenieros y no Ingenieros dedicados a desarrollar ideas y proponer soluciones tecnológicas en diversas industrias. Conócenos. </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div data-slide="2" class="slide-c section valign-wrapper">
+          <div class="container">
+            <div class="valign"> 
+              <h2 class="intro-subtitle">Brounie en números</h2>
+              <h5>Proyectos</h5>
+              <div class="row counter-row">
+                <div class="col m3 s3 counter-column">
+                  <div class="count-wrapper">
+                    <div class="count red-c">66</div>
+                    <div class="c-title oswald-ff">Android</div>
+                  </div>
+                  <div class="count-description">
+                    <p>Trabajamos con Java para las plataformas Android y nos caracterizamos por  enfocarnos en la experiencia de usuario para el segmento más amplio de sistemas operativos. </p>
+                  </div>
+                </div>
+                <div class="col m3 s3 counter-column">
+                  <div class="count-wrapper">
+                    <div class="count blue-c">57</div>
+                    <div class="c-title oswald-ff">IOS</div>
+                  </div>
+                  <div class="count-description">
+                    <p>Hemos vivido todos sus  cambios por lo que desarrollamos utilizando desde objective C hasta Swift,  siempre enfocados en  nuevas tendencias de UX y UI</p>
+                  </div>
+                </div>
+                <div class="col m3 s3 counter-column">
+                  <div class="count-wrapper">
+                    <div class="count orange-c">25</div>
+                    <div class="c-title oswald-ff">Web</div>
+                  </div>
+                  <div class="count-description">
+                    <p>Dependiendo de tus necesidades te ofrecemos soluciones en los lenguajes de programación web más populares para front y backend. 	</p>
+                  </div>
+                </div>
+                <div class="col m3 s3 counter-column">
+                  <div class="count-wrapper">
+                    <div class="count green-c">148</div>
+                    <div class="c-title oswald-ff">Total</div>
+                  </div>
+                  <div class="count-description">
+                    <p>Nuestras apps son elaboradas de acuerdo a necesidades específicas, siempre centradas en el diseño y las soluciones más creativas. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m8 offset-m2">
+                  <p class="stats-description center-align">Cada proyecto es único por lo que no se utilizan templates o plantillas prefabricadas pues impiden el crecimiento, expansión y funcionalidad de la aplicación. Así apostamos en la idea de cada uno de nuestros clientes.  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-slide="3" id="proceso-container" class="slide-c section valign-wrapper">
+          <div class="row custom-proccess valign container">
+            <h2 class="intro-subtitle">Proceso</h2>
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col m3"><a href="#step_1">Análisis <br> Técnico</a></li>
+                <li class="tab col m3"><a href="#step_2">Planeación de <br> Proyecto</a></li>
+                <li class="tab col m3"><a href="#step_3">Diseño y <br> Programación</a></li>
+                <li class="tab col m3"><a href="#step_4">Soporte</a></li>
+              </ul>
+            </div>
+            <div id="step_1" class="col s12 step-p">
+              <div class="col m6 s12 first-column valign-wrapper">
+                <div class="valign">
+                  <h3>Análisis Técnico</h3>
+                  <p class="p-description">Dedicamos la mayor parte del proyecto al análisis de nuestros clientes para entender perfectamente sus necesidades y proponer la solución tecnológica más óptima y viable.</p>
+                </div>
+              </div>
+              <div class="col m6 s12 second-column valign-wrapper">
+                <div class="valign"><img src="img/planeacion.jpg"></div>
+              </div>
+            </div>
+            <div id="step_2" class="col s12 step-p">
+              <div class="col m6 s12 first-column valign-wrapper">
+                <div class="valign">
+                  <h3>Planeación de Proyecto</h3>
+                  <p class="p-description">Contamos con ingenieros, diseñadores y expertos de marketing que diseñan y construyen un plan de trabajo con tiempos precisos para cada una de las etapas.</p>
+                </div>
+              </div>
+              <div class="col m6 second-column valign-wrapper">
+                <div class="valign"><img src="img/analisis.jpg"></div>
+              </div>
+            </div>
+            <div id="step_3" class="col s12 step-p">
+              <div class="col m6 s12 first-column valign-wrapper">
+                <div class="valign">
+                  <h3>Diseño y Programación</h3>
+                  <p class="p-description">Validamos tanto con el equipo técnico como de diseño cada uno de los requerimientos solicitados, iniciando así el desarrollo y programación de nuestros clientes. </p>
+                </div>
+              </div>
+              <div class="col m6 s12 second-column valign-wrapper">
+                <div class="valign"><img src="img/soporte.jpg"></div>
+              </div>
+            </div>
+            <div id="step_4" class="col s12 step-p">
+              <div class="col m6 s12 first-column valign-wrapper">
+                <div class="valign">
+                  <h3>Soporte</h3>
+                  <p class="p-description">Somos parte de tu idea por lo que damos seguimiento y ofrecemos un servicio de soporte y mantenimiento. Siempre preocupados por el crecimiento y evolución de tu proyecto.</p>
+                </div>
+              </div>
+              <div class="col m6 s12 second-column valign-wrapper">
+                <div class="valign"><img src="img/diseno.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section id="contacto-cotizacion" data-slide="4" class="slide section"> 
+          <div class="row full-height">
+            <div class="col l6 offset-l6 m8 offset-m4 s12 valign-wrapper full-height">
+              <div class="valign">
+                <h2 class="title-header">Cuéntanos tu proyecto</h2>
+                <div class="row">
+                  <form method="post" id="second-form" action="contact.php" class="col s12 contact-form">
+                    <div class="row">
+                      <div class="input-field col m6 s12"><i class="fa fa-user prefix"> </i>
+                        <input id="icon_user" type="text" name="name" class="validate">
+                        <label for="icon_user">Nombre	</label>
+                      </div>
+                      <div class="input-field col m6 s12"><i class="fa fa-envelope prefix"> </i>
+                        <input id="icon_mail" type="email" name="email" class="validate">
+                        <label for="icon_mail">Email</label>
+                      </div>
+                      <div class="input-field col m6 s12"><i class="fa fa-file-text prefix"> </i>
+                        <input id="icon_proyect" type="text" name="proyect_name" class="validate">
+                        <label for="icon_proyect">Nombre de tu proyecto</label>
+                      </div>
+                      <div class="input-field col m6 s12"><i class="fa fa-phone prefix"> </i>
+                        <input id="tel" type="text" name="tel" class="validate">
+                        <label for="tel">Teléfono</label>
+                      </div>
+                      <div class="input-field col m12 s12"><i class="fa fa-dollar prefix"></i>
+                        <div class="col l3 s12 title-radio-input">Presupuesto:</div>
+                        <div class="col l3 s4">
+                          <input name="budget" type="radio" id="budget_1_1" class="with-gap">
+                          <label for="budget_1_1">$10k - $25k</label>
+                        </div>
+                        <div class="col l3 s4">
+                          <input name="budget" type="radio" id="budget_2_2" class="with-gap">
+                          <label for="budget_2_2">$25k - $50k </label>
+                        </div>
+                        <div class="col l3 s4">
+                          <input name="budget" type="radio" id="budget_3_3" class="with-gap">
+                          <label for="budget_3_3">$50k+</label>
+                        </div>
+                      </div>
+                      <div class="input-field col m6 s12"><i class="fa fa-comments prefix"></i>
+                        <textarea id="contact_message" name="message" required class="materialize-textarea"></textarea>
+                        <label for="contact_message">Detalles </label>
+                      </div>
+                      <div id="captcha2" style="padding-top: 15px" class="col m6 captcha-container"></div>
+                      <div class="input-field col m12 s12">
+                        <button type="submit" class="submit-button btn waves-effect waves-light oswald-ff full-width">Enviar &nbsp  <i class="fa fa-paper-plane"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="row">
+          <div class="col m12 center-align hide-on-med-and-down">
+            			
+            Tel: +(52) 442 245 3151 | contacto@brounie.com
+          </div>
+          <div class="social-icons-wrapper"><a href="https://www.facebook.com/brounieapps/" target="_blank" class="social-icon-footer"><i class="fa fa-facebook"> </i></a><a href="https://twitter.com/brounieapps" target="_blank" class="social-icon-footer"><i class="fa fa-twitter"> </i></a><a href="https://www.instagram.com/brounie_apps/" target="_blank" class="social-icon-footer"><i class="fa fa-instagram"></i></a></div>
+          <div class="privacy-terms">2016 Brounie SA de CV ©. | <a href="privacy_terms.html" target="_blank">Políticas de privacidad </a></div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jqueryscroll.js"></script>
+    <script src="js/fullPage.js"></script>
+    <script src="js/materialize.js"></script>
+    <!--<script src="https://use.fontawesome.com/e5b369f12b.js"></script>-->
+    <script src="js/transit.js"></script>
+    <script src="js/script.js"></script>
+   <!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit"></script>
+   script type="text/javascript">
+      $(document).ready(function(){
+      
+      	$(".menu-intro").addClass("index-s");
+      
+      	$(".index-option").addClass("active-m");
+      
+      	$(".logo-change").attr("src", "/img/logo_transparente.png");
+      
+      	$(".mobile-menu-button").css("color", "white");
+      });
+      
+      var widgetId1;
+      var widgetId2;
+      var onloadCallback = function() {
+      	// Renders the HTML element with id 'example1' as a reCAPTCHA widget.
+      	// The id of the reCAPTCHA widget is assigned to 'widgetId1'.
+      	
+      	widgetId1 = grecaptcha.render('captcha1', {
+      	  'sitekey' : '6Le01ycTAAAAAJdgXeDoMjTCXw9qImQR-l_WX5Uw',
+      	  'theme' : 'light'
+      	});
+      	widgetId2 = grecaptcha.render('captcha2', {
+      	  'sitekey' : '6Le01ycTAAAAAJdgXeDoMjTCXw9qImQR-l_WX5Uw'
+      	});
+         
+      }; 
+    </script>-->
+  </body>
+  <div class="se-pre-con">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="gooey">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+          <feBlend in="SourceGraphic" in2="goo"></feBlend>
+        </filter>
+      </defs>
+    </svg>
+    <div class="blob blob-0"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="blob blob-5"></div>
+  </div>
+</html>
