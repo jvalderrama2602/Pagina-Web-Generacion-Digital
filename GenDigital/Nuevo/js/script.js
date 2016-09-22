@@ -10,7 +10,7 @@ var current_slide;
 $(document).ready(function(){
 	$("#content").css("display", "block");
 
-	console.log("Hola, gracias por ver el cÃ³digo, si estÃ¡s interesado en unirte al equipo envia tu cv a work@brounie.com comentando que viste esto =)");
+	console.log("Hola, gracias por ver el código, si estás interesado en un sitio web como este escribe a servicios@gendigital.com.ve comentando que viste esto =)");
 
 	$(".button-collapse").sideNav();
 	$('.modal-trigger.contact-modal-button').leanModal({
