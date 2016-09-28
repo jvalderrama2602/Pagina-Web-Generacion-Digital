@@ -42,7 +42,7 @@ body{font-family:'Raleway', sans-serif;overflow:hidden}#content{display:none}
 					-moz-transform:translateX(-50%) translateY(-50%);
 					-webkit-transform:translateX(-50%) translateY(-50%);
 					transform:translateX(-50%) translateY(-50%);
-					background:url(../img/apple1080.jpg) no-repeat;background-size:cover}.intro-home{background:rgba(0,0,0,0.5);color:white;height:auto;justify-content:center;position:relative;text-align:center;width:100%}.intro-home h1{font-size:180px;font-weight:bold;line-height:150px;margin-bottom:0px;text-transform:uppercase}.intro-home h5{font-size:40px}.intro-home p{font-size:18px;margin-top:50px}.count{font-family:'Oswald', sans-serif}.counter-row{margin-top:80px}.count-wrapper{border-right:1px solid white;font-size:40px;text-align:center;text-transform:uppercase}.count-description{font-size:15px;opacity:0;text-align:center}.stats-description{margin-top:-50px;font-size:18px}
+					background:url(../img/apple1080.jpg) no-repeat;background-size:cover}.intro-home{/*background:rgba(0,0,0,0.5)*/;color:white;height:auto;justify-content:center;position:relative;text-align:center;width:100%}.intro-home h1{font-size:180px;font-weight:bold;line-height:150px;margin-bottom:0px;text-transform:uppercase}.intro-home h5{font-size:40px}.intro-home p{font-size:18px;margin-top:50px}.count{font-family:'Oswald', sans-serif}.counter-row{margin-top:80px}.count-wrapper{border-right:1px solid white;font-size:40px;text-align:center;text-transform:uppercase}.count-description{font-size:15px;opacity:0;text-align:center}.stats-description{margin-top:-50px;font-size:18px}
 
 					.slide-c{background:url(../img/apple1080.jpg) no-repeat;background-size:cover;color:white;width:100%;display:block}
 
