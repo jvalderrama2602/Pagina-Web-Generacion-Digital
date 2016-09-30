@@ -626,17 +626,10 @@
 										alert(numero1*numero2);aux=1;
 										
 									}
-									}								
-																
-								
-								
-
-
-
-
+									}
 				</script>
 				
-			</form>
+		</form>
 		</div>
 		<div class="col-md-4">
 			<h2>
@@ -730,15 +723,8 @@
 					function abrirventana(){
 						var opciones="width=750,heigh=350, scrollbars=no";
 						var ventana=window.open("http://www.gendigital.com.ve/","",opciones);
-
-
 					}
-
-
 				</script>
-
-
-
 			</div>
 		</div>
 		<div class="col-md-4">
@@ -764,27 +750,32 @@
 						/*console.log("Hola"+ location.pathname);
 						/*document.write=(location.pathname);*/
 					}
-
-
 			</script>
-
-
-
-
-
 		</div>
 		<div class="col-md-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						Panel Titulo
+						Creción de Objetos
 					</h3>
 				</div>
 				<div class="panel-body">
-					Panel contenido
+					<code>
+						//Creacion del objeto<br>
+						var persona = new Object();<br><br>
+						//Asignación de propiedades<br>
+						persona.name="Jose";<br>
+						persona.edad=30;<br>
+						persona.profesion="Informático"<br>
+						//los metodos se añaden un funcion<br><br>
+						persona.MostrarNombre=function()<br>
+						{<br>
+							alert(this.name);<br>
+						}
+					</code>
 				</div>
 				<div class="panel-footer">
-					Pie de página
+					
 				</div>
 			</div>
 		</div>
@@ -797,59 +788,116 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						Panel title
+						Patron de Fabrica de Objetos
 					</h3>
 				</div>
 				<div class="panel-body">
-					Panel content
+					<code>
+
+						//Creacion del objeto<br>
+						function creaPersona(nombre,edad,trabajo){;<br>
+						var obj = new Object();<br>
+						obj.nombre=nombre;<br>
+						obj.edad=edad;<br>
+						obj.trabajo=trabajo;<br>
+						obj.MostrarNombre=function()<br>
+						{<br>
+							alert(this.nombre);<br>
+						}<br>
+						return obj;
+						<br>
+						}<br>
+						//Creando función<br>
+						var persona1 = creaPersona("José",30,"Informático")<br>
+						var persona2 = creaPersona("Madeley",20,"Marketera")<br>
+						
+
+
+
+
+
+
+
+
+						
+						
+					</code>
 				</div>
 				<div class="panel-footer">
-					Panel footer
+					
 				</div>
 			</div>
 		</div>
+		
 		<div class="col-md-4">
-			<div class="progress">
-				<div class="progress-bar progress-success">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Patrón constructor
+					</h3>
 				</div>
-			</div>
-			<div class="btn-group">
-				 
-				<button class="btn btn-default" type="button">
-					<em class="glyphicon glyphicon-align-left"></em> Left
-				</button> 
-				<button class="btn btn-default" type="button">
-					<em class="glyphicon glyphicon-align-center"></em> Center
-				</button> 
-				<button class="btn btn-default" type="button">
-					<em class="glyphicon glyphicon-align-right"></em> Right
-				</button> 
-				<button class="btn btn-default" type="button">
-					<em class="glyphicon glyphicon-align-justify"></em> Justify
-				</button>
+				<div class="panel-body">
+					<code>
+						//Creacion del objeto<br>
+						function Persona(nombre,edad,trabajo);<br>
+						this.nombre=nombre;<br>
+						this.edad=edad;<br>
+						this.trabajo=trabajo;<br>
+						this.MostrarNombre=function()<br>
+						{<br>
+							alert(this.nombre);<br>
+						}<br>
+						
+						
+						//Creando función<br>
+						var persona1 = new Persona("José",30,"Informático")<br>
+						var persona2 = new Persona("Madeley",20,"Marketera")<br>
+						
+					</code>
+				</div>
+				<div class="panel-footer">
+					Creación de tipos especificos de Objetos
+				</div>
 			</div>
 		</div>
+
+		
+
+
+		
 		<div class="col-md-4">
-			<div class="panel-group" id="panel-173949">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-173949" href="#panel-element-988784">Collapsible Group Item #1</a>
-					</div>
-					<div id="panel-element-988784" class="panel-collapse collapse">
-						<div class="panel-body">
-							Anim pariatur cliche...
-						</div>
-					</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Patron Prototype de Objetos
+					</h3>
 				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-173949" href="#panel-element-536127">Collapsible Group Item #2</a>
-					</div>
-					<div id="panel-element-536127" class="panel-collapse collapse">
-						<div class="panel-body">
-							Anim pariatur cliche...
-						</div>
-					</div>
+				<div class="panel-body">
+					<code>
+						//Creacion del objeto<br>
+						function Persona(nombre,edad,trabajo);<br>
+						this.nombre=nombre;<br>
+						this.edad=edad;<br>
+						this.trabajo=trabajo;<br>
+						this.MostrarNombre=function()<br>
+						{<br>
+							alert(this.nombre);<br>
+						}<br>
+						
+						//Creando función<br>
+						var persona1 = new Persona("José",30,"Informático")<br>
+						var persona2 = new Persona("Madeley",20,"Marketera")<br>
+						
+						Persona.prototype.apellido = "Valderrama"
+
+
+
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					Creación de propiedades para todos los objetos
 				</div>
 			</div>
 		</div>
@@ -857,7 +905,248 @@
 </div>
 
 
-	
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Otro ejemplo prototype
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						
+						//Creacion del objeto<br>
+						function Persona(){};<br>
+						Persona.prototype={<br>
+						constructor: Persona,<br>
+						nombre:"Jose"<br>
+						edad:29<br>
+						trabajo: "Informatico"<br>
+						MostrarNombre : function()<br>
+						{<br>
+							alert(this.nombre);<br>
+						}<br>
+						
+						}<br>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Combinación prototype / constructor
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						//Creacion del objeto<br>
+						function Persona(nombre,edad,trabajo);<br>
+						this.nombre=nombre;<br>
+						this.edad=edad;<br>
+						this.trabajo=trabajo;<br>
+						this.amigos=["Pedro,Angelica"]<br>
+						{<br>
+							alert(this.nombre);<br>
+						}<br>
+						
+						
+						//prototype<br>
+						Persona.prototype = {<br>
+							constructor:Persona,<br>
+							MostrarNombre:function(){<br>
+							alert(this.nombre)<br>
+							}<br>
+						
+						var persona1 = new Persona("José",30,"Informático")<br>
+						var persona2 = new Persona("Madeley",20,"Marketera")<br>
+						//agrega mas amigos
+						persona1.amigos.push("Paul")
+
+						alert(persona1.amigos);
+						//resultado pedro angelica y paul
+						
+						alert(persona2.amigos);
+						//resultado pedro angelica
+
+		
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Encapsulamiento
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						//Creacion del objeto<br>
+						function Persona(nombre,edad,trabajo);<br>
+						var nombre=nombre;<br>
+						var edad=edad;<br>
+						var trabajo=trabajo;<br>
+						this.MostrarNombre=function()<br>
+						{<br>
+							return nombre+ " es "+trabajo;<br>
+						}<br>
+						this.getTrabajo=function()<br>
+						{<br>
+							return trabajo;<br>
+						}<br>
+						this.cambiarTrabajo=function(nuevoTrabajo)<br>
+						{<br>
+							trabajo=nuevoTrabajo;<br>
+						}<br>
+						<br>
+						var persona1 = new Persona("José",30,"Informático")<br>
+						var persona2 = new Persona("Madeley",20,"Marketera")<br>
+						
+						persona1.getTrabajo(); // Resultado "informático"<br>
+
+						persona1.cambiarTrabajo("Administrador");<br>
+						persona1.getTrabajo // Resultado "Administrador"<br>
+						//
+
+
+
+
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Herencias
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						
+						//Creacion del objeto<br>
+						var vehiculo={timon:true,motor:true}<br>
+						var taxi=Object.create(vehiculo)<br>
+						//Hereda las propiedades del vehiculo.
+						<br>
+						//si se agregas más propiedades a vehiculo taxi las hereda
+						<br>
+						// si se agrega más propiedades a taxi no se agregan al padre que es vehiculo
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						
+						<br>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Otro ejemplo de herencia
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						function Vehiculo(){<br>
+						this.motor=true;<br>
+						<br>
+						var taxi = new Vehiculo();
+						Vehiculo.prototype.timon=true
+						<br>
+						//taxi hereda la propiedad timon
+						<br>
+						<br>
+						<br>
+						<br>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Polimorfismo
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						var Carro function(){<br>
+						this.motor=true;<br>
+						<br>
+						var Vehiculo function(){<br>
+						this.motor=true;<br>
+						<br>
+						var taxi = new Vehiculo();
+						var camion = new Carro();
+						<br>
+						//taxi hereda las propiedades que se agregen de Vehiculo
+						// y camion las de carro.
+						<br>
+						<br>
+						<br>
+						<br>
+
+
+
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					Es la creación de diferentas objetos con la misma propiedad
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
 
 <script type="text/javascript">
 		function ejif1(){	
