@@ -1148,6 +1148,240 @@
 	</div>
 </div>	
 
+
+
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Funciones anónimas
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						
+						//Función anonimas no tienen nombre<br>
+						var functionName=funtion (x,y,z){<br>
+						//funcion<br>
+						}<br>
+						//Otro ejemplo de función.<br>
+						
+						funtion (x,y,z){<br>
+						//funcion<br>
+						}<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						
+						<br>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Funciones Recursivas
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						//Es cuando una función se llama es a si misma<br>
+						<br>
+						function factorial (num){<br>
+						if(num<=1){<br>
+							return=1;<br>
+						}else{<br>
+							return num*arguments.callee(num-1); <br>// Recomendable usar esta linea<br>
+						}<br>
+						}<br>
+						}<br>
+						<br>
+						<br>
+						<br>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Closures
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						
+						var name = "Global"<br>
+						var obj = {<br>
+						name:"My Objeto",<br>
+						getNameFunc:function(){<br>
+						return function(){<br>
+						return this.name;<br>
+						}<br>
+						}<br>
+						}<br>
+						alert(obj.getNameFunc()())<br>
+						//devuelve "Global"	
+
+
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					No se pude acceder al valor que está dentro del objeto
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Otro Ejemplo de Closure
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						
+						var name = "Global"<br>
+						var obj = {<br>
+						name:"My Objeto",<br>
+						getNameFunc:function(){<br>
+						<strong>var that = this</strong><br>
+						return function();<br>
+						return that.name;<br>
+						}<br>
+						}<br>
+						}<br>
+						alert(obj.getNameFunc()())<br>
+						//devuelve "Mi objeto"	
+						}<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						
+						<br>
+					</code>
+				</div>
+				<div class="panel-footer">
+					Asi se puede obtener el valor que está dentro del objeto. Se tiene que asignar a otra variable dentro del objeto.
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Bloqueo de alcance de variables
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						function numeros (contador){<br>
+						(function(){<br>
+							for(var i=0; i<contador;i++){<br>
+							alert(i);<br>
+							}<br>
+						})();<br>
+						alert(i);//dará error pues i no está definida globlamente.<br>
+						}<br>
+						
+						<br>
+						<br>
+						<br>
+					</code>
+				</div>
+				<div class="panel-footer">
+					Función anónima más variable oculta. No se pude accesar a la variable i
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Variables Privadas
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						
+						function add (x,y){<br>
+						var sum=num1+num2;<br>
+						return sum;
+						}<br>
+						<br>
+						//sum num1 y num 2 son variables privadas porque están dentro de la función.<br>
+						}<br>
+						
+						<br>
+						<br>
+						<br>
+
+
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
+
+
+
+
+
+
+
+
+
 <script type="text/javascript">
 		function ejif1(){	
 		var respuesta=prompt("Introduce una palabra","");	
