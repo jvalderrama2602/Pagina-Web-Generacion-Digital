@@ -1376,6 +1376,1486 @@
 
 
 
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						BOM - Objeto Window
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						
+						var edad = 29<br>
+						function MostrarEdad() {<br>
+						aler(this.edad);<br>
+						}<br>
+						alert(window.edad);<br>
+						//Retorna 29
+						MostrarEdad();<br>
+						//Retorna 29
+						window.MostrarEdad();<br>
+						//Retorna 29<br>
+						
+						
+						<br>
+					</code>
+				</div>
+				<div class="panel-footer">
+					Las funciones declaradas en el ambito global pueden ser accesadas desde el objeto window
+				</div>
+			</div>
+		</div>
+		
+		<!-- <div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Bloqueo de alcance de variables
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						function numeros (contador){<br>
+						(function(){<br>
+							for(var i=0; i<contador;i++){<br>
+							alert(i);<br>
+							}<br>
+						})();<br>
+						alert(i);//dará error pues i no está definida globlamente.<br>
+						}<br>
+						
+						<br>
+						<br>
+						<br>
+					</code>
+				</div>
+				<div class="panel-footer">
+					Función anónima más variable oculta. No se pude accesar a la variable i
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Variables Privadas
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						
+						function add (x,y){<br>
+						var sum=num1+num2;<br>
+						return sum;
+						}<br>
+						<br>
+						//sum num1 y num 2 son variables privadas porque están dentro de la función.<br>
+						}<br>
+						
+						<br>
+						<br>
+						<br>
+
+
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	 -->
+
+
+<h1>Ejemplo de Frames</h1>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Frames
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						
+					<h1>Frame 0</h1>
+					<p>window.frames[0]</p>
+					<p>window.frames[topFrame]</p>
+					<p>top.frames[0]</p>
+					<p>top.frames[topFrame]</p>
+					<p>frames[0]</p>
+					<p>frames[topFrame]</p>
+					</code>
+				</div>
+				<div class="panel-footer">
+					En Html 5 ya no compatible. La idea es mostrar las propiedades que son accesibles con el objeto window
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Frames
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						<h1>Frame 1</h1>
+						<p>window.frames[1]</p>
+						<p>window.frames[leftFrame]</p>
+						<p>top.frames[1]</p>
+						<p>top.frames[leftFrame]</p>
+						<p>frames[0]</p>
+						<p>frames[leftFrame]</p>
+					</code>
+				</div>
+				<div class="panel-footer">
+					En Html 5 ya no compatible. La idea es mostrar las propiedades que son accesibles con el objeto window
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Frames
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Frame 2</h1>
+						<p>window.frames[2]</p>
+						<p>window.frames[rightFrame]</p>
+						<p>top.frames[2]</p>
+						<p>top.frames[rightFrame]</p>
+						<p>frames[2]</p>
+						<p>frames[rightFrame]</p>
+
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					En Html 5 ya no compatible. La idea es mostrar las propiedades que son accesibles con el objeto window
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
+<h1>Ejemplo de window position</h1>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Abrir ventana
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						
+					<h1>Abrir ventana</h1>
+					<p>function AbrirVentana(){</p>
+					<p>miVentana= window.open(",",'width=200, height=200');</p>
+					<p>miVentana.document.write("< p >mi ventana < / p >");</p>
+					<p>AbrirVentana();</p>
+					<p>// Abre ventana con las medidas indicadas</p>
+					<p></p>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Manipulación de Ventana
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						<h1>Manipulando Ventanas</h1>
+						<p>window.frames[1]</p>
+						<p>window.frames[leftFrame]</p>
+						<p>top.frames[1]</p>
+						<p>top.frames[leftFrame]</p>
+						<p>frames[0]</p>
+						<p>frames[leftFrame]</p>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Otras propiedades del objeto window
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Propiedades del objeto window</h1>
+						<p>window.moveBy(200,300);</p>
+						<p>//Mueve la ventana en esas coordenadas en base a su antigua posición</p>
+						<p>window.moveTo(0,0);</p>
+						<p>//mueve la ventana a la esquina superior izquierda</p>
+						<p>window.resizeTo(250,250);</p>
+						<p>//Modifica el tamaño de la ventana</p>
+						<p>window.resizeBy(0,50)</p>
+						<p>//Modifica el tamaño en base a su antigua medida</p>
+
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Metodos setTimeout
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						
+					<h1>Metodo setTimeout</h1>
+					<p>setTimeout("console.log('Hola pasaron 3 segundos'",3000);</p>
+					<p>// Al pasar 3 segundos aparecera mensaje en la consola</p>
+					
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Otro ejemplo setTimeout
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						<h1>Metodo setTimeout</h1>
+						<p>function muestraMensaje(){</p>
+						<p>console.log("Ha transcurrido 3 segundos")</p>
+						<p>setTimeout(muestraMendaje,3000);</p>
+						
+						<p>//Muestra el mensaje al transcurrir 3 seg.</p>
+						<p></p>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Interrumpir setTimeout
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Interrupción de setTimeout</h1>
+						<p>function muestraMensaje(){</p>
+						<p>console.log("Ha transcurrido 3 segundos");}</p>
+						<p>var id=setTimeout(muestraMendaje,5000);}</p>
+						<p>//si se ejecuta la siguiente código antes de los 5 segundos se interumpirá el mensaje de la función</p>
+						<p>clearTimeout(id)</p>
+						<p></p>
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Programar funciones
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						
+					<h1>Metodo setInterval</h1>
+					<p>function muestraMensaje(){</p>
+					<p>console.log("Ha transcurrido 3 segundos")}</p>
+					<p>setInterval(muestraMensaje,3000);</p>
+					<p>//cada 3 segundos se mostrará el mensaje de la función llamada</p>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Interrupción de funciones programadas
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						<h1>Metodo clearInterval</h1>
+						<p>function muestraMensaje(){</p>
+						<p>console.log("Ha transcurrido 3 segundos");}</p>
+						<p>var id=setInterval(muestraMendaje,5000);}</p>
+						<p>//si se ejecuta la siguiente código se interumpirá el mensaje la función</p>
+						<p>clearInterval(id)</p>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Document
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Propiedad lastModified</h1>
+						<p>document.lastModified</p>
+						<p>//se obtiene la fecha de la última modificación de un sitio web</p>
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
+
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Document
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Propiedad referrer</h1>
+						<p>document.referrer</p>
+						<p>//Obtiene la url desde que se accedió a la página </p>
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Document
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Propiedad title</h1>
+						<p>document.title</p>
+						<p>//Obtiene el texto que está en la meta etiqueta del sitio web </p>
+						<p>//title también es de lectura y escritura</p>
+						<p>document.title="JavaScript"</p>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Document
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Propiedad URL</h1>
+						<p>document.URL</p>
+						<p>//se obtiene la dirección web</p>
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Document
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Propiedad getElementsByTagName</h1>
+						<p>document.getElementsByTagName("p")</p>
+						<p>//Obtiene en un array todas las etiquetas p del documento HTML</p>
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Document
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Propiedad links</h1>
+						<p>document.links[0]</p>
+						<p>//se obtiene el primer link del documento</p>
+						<p>//title también es de lectura y escritura</p>
+						<p>document.title="JavaScript"</p>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Document
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Propiedad images</h1>
+						<p>document.images[0]</p>
+						<p>//se obtiene la primera linea de html donde aparece una imágen</p>
+						<p>//otra forma es la siguiente</p>
+						<p>document.images["nombre"]</p>
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Location
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo assign </h1>
+						<p>location.assign("https://gendigital.com.ve/")</p>
+						<p>//Se dirige al link indicado </p>
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Location
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>windows location</h1>
+						<p>window.location="https://gendigital.com.ve/"</p>
+						<p>//Se dirige al link indicado </p>
+
+						<p>//otra forma</p>
+						<p>location.href="https://gendigital.com.ve/"</p>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Location
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo hash</h1>
+						<p>//Al estar en un url como esta:</p>
+						<p>//"http://gendigital.com.ve/curso#JavaScript"</p>
+						<p>//al conocer otra hashtag del sitio se puede acceder de la manera siguiente:</p>
+						<p>location.hash="#CSS"</p>
+						<p>//con esta acción se iría a la siguiente dirección:</p>
+						<p>//"http://gendigital.com.ve/curso#CSS</p>
+						
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Location
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo hostname</h1>
+						<p>//cambio de dominio:</p>
+						<p>//si estas en este dominio</p>
+						<p>//http://google.com/buscador/</p>
+
+						<p>location.hostname="www.gendigital.com"</p>
+						<p>//el dominio cambia el resto de la url no</p>
+						<p>//http://gendigital.com/buscador/</p>
+
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Location
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo pathname</h1>
+						<p>//cambio de url:</p>
+						<p>//si estas en este dominio</p>
+						<p>//http://google.com/buscador/</p>
+
+						<p>location.pathname="search"</p>
+						<p>//la url cambia a:</p>
+						<p>//http://google.com/search/</p>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto location
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo reload()</h1>
+						<p>location.reload();</p>
+						<p>//se recarga la página localmente</p>
+						<p>//otra forma es la siguiente</p>
+						<p>location.reload(true)</p>
+						<p>// recarga el sitio desde el servidor</p>
+
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Navigator
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo appCodeName</h1>
+						<p>navigator.appCodeName;</p>
+						<p>//se obtiene el nombre del navegador:</p>
+						<p>//"Chrome"</p>
+						
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Navigator
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo appName</h1>
+						<p>navigator.appName;</p>
+						<p>//se obtiene el nombre oficial del navegador:</p>
+						<p>//"Chrome"</p>
+						
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Navigator
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo cookieEnabled</h1>
+						<p>navigator.cookieEnabled;</p>
+						<p>//devuelve si esta activa la cookie</p>
+						<p>//"true o false"</p>
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Navigator
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo appCodeName</h1>
+						<p>navigator.appCodeName;</p>
+						<p>//se obtiene el nombre del navegador:</p>
+						<p>//"Chrome"</p>
+						
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Navigator
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo appName</h1>
+						<p>navigator.appName;</p>
+						<p>//se obtiene el nombre oficial del navegador:</p>
+						<p>//"Chrome"</p>
+						
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Navigator
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo cookieEnabled</h1>
+						<p>navigator.cookieEnabled;</p>
+						<p>//devuelve si esta activa la cookie</p>
+						<p>//"true o false"</p>
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Navigator
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo javaEnabled;</h1>
+						<p>navigator.javaEnabled;</p>
+						<p>//devuelve si esta activo java:</p>
+						<p>//"true o false"</p>
+						
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Navigator
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo mimeTypes</h1>
+						<p>navigator.mimeTypes;</p>
+						<p>//se obtiene array de los tipos MIME registrados por el navegadror</p>
+						
+						
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Navigator
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo platform</h1>
+						<p>navigator.platform;</p>
+						<p>//devuelve el sistema operativo donde está corriend el navegador</p>
+						<p>//"Linux windows etc"</p>
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Navigator
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo plugins;</h1>
+						<p>navigator.plugins;</p>
+						<p>//devuelve un arreglo de los plugins instalados en el navegador</p>
+						
+						
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Navigator
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo product</h1>
+						<p>navigator.product;</p>
+						<p>//se obtiene nombre del producto (navegador)</p>
+						
+						
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Navigator
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo userAgent</h1>
+						<p>navigator.userAgent;</p>
+						<p>//se obtiene nombre que utiliza el navegador para identificarse en el servidor
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto History
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo go();</h1>
+						<p>history.go(-1);</p>
+						<p>//va a la página anterior es como hacer click a atrás</p>
+						
+						
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto History
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo go();</h1>
+						<p>history.go(+1);</p>
+						<p>//va a la página siguiente</p>
+						
+						
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto History
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+					
+						<h1>Metodo back();</h1>
+						<p>history.back();</p>
+						<p>//va a la página visitada anteriormente</p>
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto History
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo forward();</h1>
+						<p>history.forward();</p>
+						<p>//va a la página siguiente visitada</p>
+						
+						
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto History
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<h1>Metodo length;</h1>
+						<p>history.length;</p>
+						<p>//indica los elementos que están en la historia</p>
+						
+						
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Screen
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+					
+						<h1>Metodo availHeight;</h1>
+						<p>screen.availHeight;</p>
+						<p>//Altura de pantalla disponible para las ventanas en pixeles</p>
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Screen
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+					
+						<h1>Metodo availWidth;</h1>
+						<p>screen.availWidth;</p>
+						<p>//Ancho de pantalla disponible para las ventanas en pixeles</p>
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+						<h3 class="panel-title">
+						Objeto Screen
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+					
+						<h1>Metodo colorDepth;</h1>
+						<p>screen.colorDepth;</p>
+						<p>//Indica profundidad de color de la pantalla(32 bits)</p>
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Screen
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+					
+						<h1>Metodo height;</h1>
+						<p>screen.height;</p>
+						<p>//Altura total de la pantalla en pixeles</p>
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Screen
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+					
+						<h1>Metodo width;</h1>
+						<p>screen.width;</p>
+						<p>//Ancho total de la pantalla en pixeles</p>
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+						<h3 class="panel-title">
+						Objeto Screen
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+					
+						<h1>Metodo colorDepth;</h1>
+						<p>screen.colorDepth;</p>
+						<p>//Indica profundidad de color de la pantalla(32 bits)</p>
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Objeto Screen
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+					
+						<h1>Ejemplo</h1>
+						<script type="text/javascript">
+							function openWin(){
+								myWindow=window.open(",",'width=200,height=100');
+								myWindow.document.write("<p>Mi ventana</p>");
+							}
+						</script>
+						<button onclick="openWin()">Abrir Ventana</button>
+						<p>window.moveTo(0,0)</p>
+						<p>window.rezizeTo(screen.availWith,screen.availHeight)</p>
+						
+
+
+
+						<p>//ejemplo de redimensionamiento de una nueva ventana al tamaño máximo posible según la pantalla del usuario</p>
+
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
