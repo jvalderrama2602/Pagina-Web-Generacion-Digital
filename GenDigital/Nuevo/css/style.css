@@ -44,9 +44,15 @@ body{font-family:'Raleway', sans-serif;overflow:hidden}#content{display:none}
 					transform:translateX(-50%) translateY(-50%);
 					background:url(../img/apple1080.jpg) no-repeat;background-size:cover}.intro-home{/*background:rgba(0,0,0,0.5)*/;color:white;height:auto;justify-content:center;position:relative;text-align:center;width:100%}.intro-home h1{font-size:180px;font-weight:bold;line-height:150px;margin-bottom:0px;text-transform:uppercase}.intro-home h5{font-size:40px}.intro-home p{font-size:18px;margin-top:50px}.count{font-family:'Oswald', sans-serif}.counter-row{margin-top:80px}.count-wrapper{border-right:1px solid white;font-size:40px;text-align:center;text-transform:uppercase}.count-description{font-size:15px;opacity:0;text-align:center}.stats-description{margin-top:-50px;font-size:18px}
 
-					.slide-c{background:url(../img/apple1080.jpg) no-repeat;background-size:cover;color:white;width:100%;display:block}
+					.slide-c{background:url(http://gendigital.net.ve/wp-content/uploads/revslider/the7-fullscreen-header-excluded/thd03.jpg) no-repeat;background-size:cover;color:white;width:100%;display:block}
 
 					.slide-c#proceso-container{background:url(../img/proceso.png) no-repeat;background-size:cover}.intro-subtitle{margin:20px auto 0;padding-bottom:20px;text-align:center;text-transform:uppercase;font-family:"Oswald"}.intro-subtitle+h5{text-align:center;font-family:Oswald;margin-top:-10px}.custom-proccess{width:100%}.custom-proccess .tabs{background-color:transparent;margin-top:40px;margin-bottom:70px;height:60px}.custom-proccess .tabs .tab{height:100%;line-height:initial}.custom-proccess .tabs .tab a{color:white;font-size:22px}
+
+					.slide-d{background:url(http://gendigital.net.ve/wp-content/uploads/2014/03/mouse-586244_1920.jpg) no-repeat;background-size:cover;color:white;width:100%;display:block}
+
+					.slide-d#proceso-container{background:url(../img/proceso.png) no-repeat;background-size:cover}.intro-subtitle{margin:20px auto 0;padding-bottom:20px;text-align:center;text-transform:uppercase;font-family:"Oswald"}.intro-subtitle+h5{text-align:center;font-family:Oswald;margin-top:-10px}.custom-proccess{width:100%}.custom-proccess .tabs{background-color:transparent;margin-top:40px;margin-bottom:70px;height:60px}.custom-proccess .tabs .tab{height:100%;line-height:initial}.custom-proccess .tabs .tab a{color:white;font-size:22px}
+
+
 
 					.custom-proccess .tabs .indicator{background-color:#f44336;width:25%;left:0}.col.step-p{height:350px;padding-top:0px;position:relative}.step-p .first-column{height:100%;position:absolute;left:60px !important;z-index:2}.step-p .second-column{height:100%;position:absolute;right:60px !important;z-index:1}.step-p .second-column img{box-shadow:0px 0px 66px black;max-width:500px}.step-p h3{font-family:"Oswald";text-align:right}.p-description{font-size:18px;text-align:right}input:not([type]).validate+label,input[type=text].validate+label,input[type=password].validate+label,input[type=email].validate+label,input[type=url].validate+label,input[type=time].validate+label,input[type=date].validate+label,input[type=datetime].validate+label,input[type=datetime-local].validate+label,input[type=tel].validate+label,input[type=number].validate+label,input[type=search].validate+label,textarea.materialize-textarea.validate+label{width:95%}
 
@@ -64,3 +70,17 @@ body{font-family:'Raleway', sans-serif;overflow:hidden}#content{display:none}
 
 
 					.servicios-container{background-size:cover;background-position:-110vw 0}.service-row{color:white;margin:15px 0}.service-title{font-size:18px}.service-icon{margin-right:0px;max-width:20px}.service-description{font-size:14px}.close-icon{width:50px;height:50px;right:0px}.portafolio-link{background:white;color:black}}
+	.btn-secundary{
+    text-decoration: none;
+    color: #fff;
+    background-color:  #48a3c6;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;}
+
+    .intro-text{
+	background: rgba(72,163,198,0.5);
+	border-radius: 6px;
+	padding-top: 5px;
+    }
