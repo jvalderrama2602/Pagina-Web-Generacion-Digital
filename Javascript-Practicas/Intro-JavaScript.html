@@ -3028,8 +3028,119 @@
 
 
 
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						JS desde un Link
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						
+						<h1>JS desde un Link</h1>
+						<a href="javascript:alert('Código JS')">Link con JS</a>
+						
+						
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+						<h3 class="panel-title">
+						Función JS desde un Link
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<div>
+						<h1>Función JS desde un Link</h1>
+						<a href="JavaScript:evento50()">Link con función</a>
+						<p id="eventos40"></p>
+						<p id="eventos5"></p>
+						</div>
+						<script type="text/javascript">
+							function evento50()
+							{
+								var escribir= document.getElementById("eventos40");
+								escribir.innerHTML="Hiciste click en un link"
+							}
+						
+							
 
 
+						</script>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						JS desde un elemento
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+						<style>
+							div .cajas{
+								width:40px;
+								height: 40px;
+								float:left;
+								margin:5px;
+								background-color: yellow;
+								border: 1px solid #339;
+															}
+						</style>
+						<div>
+						<h1>JS desde un elemento</h1>
+						<div class="cajas" id="caja01" onclick="divClick(this)" ></div>
+						<div class="cajas" id="caja02" onclick="divClick(this)" ></div>
+						<div class="cajas" id="caja03" onclick="divClick(this)" ></div>
+						<div class="cajas" id="caja04" onclick="divClick(this)" ></div><br>
+						<p id="sms"> 
+						
+						</div>
+						<script type="text/javascript">
+							function divClick(x)
+							{
+								var escribir= document.getElementById("sms");
+								escribir.innerHTML="Haz presionado una caja: " + x.id
+							}
+							
+							
+							
+
+
+						</script>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
