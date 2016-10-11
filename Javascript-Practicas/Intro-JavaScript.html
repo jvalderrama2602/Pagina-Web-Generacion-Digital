@@ -2748,27 +2748,41 @@
 
 
 
-
-
-
-
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						Objeto Screen
+						Eventos
 					</h3>
 				</div>
 				<div class="panel-body">
-					<code>
+					<code id="eventos">
 					
-					
-						<h1>Metodo width;</h1>
-						<p>screen.width;</p>
-						<p>//Ancho total de la pantalla en pixeles</p>
+						<div onclick="evento();" onmouseover="evento2();">
+						<h1>Eventos: onclick y onmouseover </h1>
+						<p></p>
+						<p id="mouse">//Ancho de pantalla disponible para las ventanas en pixeles</p>
+						</div>
+						<script type="text/javascript">
+							function evento()
+							{
+								var escribir= document.getElementById("eventos");
+								escribir.innerHTML="Hiciste click, recarga para volver a empezar"
+								
 
+							}
+							function evento2()
+							{
+								var escribir2= document.getElementById("mouse");
+								escribir2.innerHTML="Pasaste el mouse por encima, recarga para volver a empezar  "
+							}
+
+
+
+
+						</script>
 					</code>
 				</div>
 				<div class="panel-footer">
@@ -2781,16 +2795,39 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 						<h3 class="panel-title">
-						Objeto Screen
+						Eventos
 					</h3>
 				</div>
 				<div class="panel-body">
 					<code>
 					
 					
-						<h1>Metodo colorDepth;</h1>
-						<p>screen.colorDepth;</p>
-						<p>//Indica profundidad de color de la pantalla(32 bits)</p>
+						<h1>Variable "this"</h1>
+						<div id="contenido" style="width: 150px; height: 60px; border: thin solid silver" onmouseover="sobre();" onmmouseout="sale();">
+							
+						Sección de Prueba
+
+						</div>
+						<script>
+							function sobre()
+							{
+								var variable = document.getElementById('contenido')
+								if (sobre){
+								variable.style.borderColor='black';
+							    }
+							    else
+							    {
+							    variable.style.borderColor='silver'		
+							    }
+							}
+							function sale()
+							{
+								
+							}
+
+						</script>
+						<p></p>
+						
 
 					</code>
 				</div>
@@ -2808,28 +2845,40 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						Objeto Screen
+						Eventos
 					</h3>
 				</div>
 				<div class="panel-body">
 					<code>
 					
 					
-						<h1>Ejemplo</h1>
+						<h1>Otro Ejemplo this</h1>
+						<div style="padding: .2em; width:150px;height:60px; border:thin solid silver" onmouseover="resalta(this);"> Zona de prueba</div>
+
+
 						<script type="text/javascript">
-							function openWin(){
-								myWindow=window.open(",",'width=200,height=100');
-								myWindow.document.write("<p>Mi ventana</p>");
+							function resalta(elemento)
+							{
+								switch(elemento.style.borderColor){
+									case 'silver':
+									case 'silver silver silver silver':
+									case '#c0c0c0':
+										elemento.style.borderColor="black";
+										break;
+									case 'black':
+									case 'black black black black':
+									case '#000000':
+										elemento.style.borderColor="silver";
+										break;
+
+								}
+
 							}
+
+
+
+
 						</script>
-						<button onclick="openWin()">Abrir Ventana</button>
-						<p>window.moveTo(0,0)</p>
-						<p>window.rezizeTo(screen.availWith,screen.availHeight)</p>
-						
-
-
-
-						<p>//ejemplo de redimensionamiento de una nueva ventana al tamaño máximo posible según la pantalla del usuario</p>
 
 					</code>
 				</div>
@@ -2849,6 +2898,128 @@
 
 
 
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Handlers y listeners
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<div>
+						<h1>addEventListener</h1>
+						<input type="button" id="pinchable" value="Haz click y verás">
+						<p id="eventos3"></p>
+						
+						</div>
+						<script type="text/javascript">
+							function evento3()
+							{
+								var escribir= document.getElementById("eventos3");
+								escribir.innerHTML="Hiciste click, recarga para volver a empezar"
+							}
+							var elDiv=document.getElementById("pinchable");
+							elDiv.addEventListener("click", evento3, false);
+
+
+						</script>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+						<h3 class="panel-title">
+						Eventos
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<div>
+						<h1>otro ejemplo addEventListener</h1>
+						<input type="button" id="pinchable2" value="Haz click y verás">
+						<p id="eventos4"></p>
+						<p id="eventos5"></p>
+						</div>
+						<script type="text/javascript">
+							function evento4()
+							{
+								var escribir= document.getElementById("eventos4");
+								escribir.innerHTML="Hiciste click, recarga para volver a empezar"
+							}
+							function evento5()
+							{
+								var escribir= document.getElementById("eventos5");
+								escribir.innerHTML="Hiciste click, hazlo otra vez"
+							}
+							var elDiv=document.getElementById("pinchable2");
+							elDiv.addEventListener("click", evento4, false);
+							elDiv.addEventListener("click", evento5, false);
+
+
+						</script>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Eventos
+					</h3>
+				</div>
+				<div class="panel-body">
+					<code>
+					
+						<div>
+						<h1>Ejemplo con removeEventListener</h1>
+						<input type="button" id="pinchable3" value="Haz click y verás">
+						<p id="eventos6"></p>
+						
+						</div>
+						<script type="text/javascript">
+							function evento6()
+							{
+								var escribir= document.getElementById("eventos6");
+								escribir.innerHTML="Hiciste click, recarga para volver a empezar"
+							}
+							
+							}
+							var elDiv=document.getElementById("pinchable3");
+							elDiv.addEventListener("click", evento6, false);
+							//no tiene efecto la siguinte linea
+							elDiv.removeEventListener("click", evento6, true);
+
+
+						</script>
+					</code>
+				</div>
+				<div class="panel-footer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
