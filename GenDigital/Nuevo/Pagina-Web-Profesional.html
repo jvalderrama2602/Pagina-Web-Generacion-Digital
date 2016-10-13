@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Generación Digital">
+    <meta name="description" content="GenDigital, agencia de desarrollo Web y Móvil.">
+
+    <meta itemprop="name" content="GenDigital | Hacemos Webs">
+    <meta itemprop="description" content="Somos GenDigital, una agencia de marketing, desarrollo Web y Móvil. Conózcanos">
+    <meta itemprop="image" content="http://www.gendigital.com.ve/img/logos/Logoweb.png">
+    
+
+    <meta name="twitter:site" content="GenDigital">
+    <meta name="twitter:title" content="GenDigital | Hacemos Webs">
+    <meta name="twitter:description" content="GenDigital, agencia de desarrollo Web y Móvil.">
+    <meta name="twitter:creator" content="By GenDigital">
+    <meta name="twitter:image" content="http://www.gendigital.com.ve/img/share_image.png">
+
+
+    <meta property="og:title" content="Generación Digital">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://www.gendigital.com.ve/">
+    <meta property="og:image" content="http://www.gendigital.com.ve/img/twitter/Agencia-Marketing.jpg">
+    <meta property="og:description" content="Somos GenDigital, una agencia de marketing, desarrollo Web y Móvil. Conózcanos">
+    <meta property="og:site_name" content="Generación Digital | Hacemos Web 2.0">
+   
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    
+    <title>GenDigital | Página Web Profesional</title>
+
+    <link href="css/css/materialize.min.css" rel="stylesheet">
+    <link href="css/jquery.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+   
+     <style>
+            .negro{color:#000000;}
+            .blanco{color: #ffffff;text-decoration: none;}
+            .blanco:hover{color: #ffffff;text-decoration: none;}
+            .centrar{text-align: center;} 
+            .margen1{margin:0.5px;}
+    </style>
+  </head>
+
+  <body>
+     <div id="content">
+    <a href="#" data-activates="mobile-menu" class="button-collapse mobile-menu-button"><i class="fa fa-bars"></i></a>
+    <a href="#modal_contacto" class="btn-floating btn-large blue contact-modal-button waves-effect-waves-light modal-trigger"><i class="fa fa-envelope"> </i></a>
+      <ul id="mobile-menu" class="side-nav">
+        <li><a><img src="img/logos/Logoweb.png"></a></li>
+        <li><a href="index.html" class="index-option">Inicio</a></li>
+        <li><a href="Paginas-Web.html" class="servicios-option">Páginas Web</a></li>
+        <li><a href="http://www.gendigital.com.ve/blog/" class="portafolio-option">Blog</a></li>
+        <li><a href="nosotros.html" class="nosotros-option">Nosotros </a></li>
+      </ul>
+      <div class="success-alert">Gracias por escribirnos, pronto te contactaremos :)</div>
+
+      <div class="error-alert">Si tiene algún problema con el formulario, contactanos directamente al correo :)</div>
+      <div id="modal_contacto" class="modal bottom-sheet">
+        <div class="container"> 
+          <div class="modal-content"><a href="#!" class="modal-close"><i class="fa fa-times"> </i></a>
+            <h2 class="contact-modal-title">Contáctanos</h2>
+            <div class="contact-phone">Tel: +(58) 412 208 9872</div>
+            <div class="row">
+              <form method="post" id="contact-form" action="contact.php" class="col s12 contact-form">
+                <div class="row">
+                  <div class="input-field col m4 s12"><i class="fa fa-user prefix"> </i>
+                    <input id="icon_user" type="text" name="name" required class="validate">
+                    <label for="icon_user">Nombre </label>
+                  </div>
+                  <div class="input-field col m4 s12"><i class="fa fa-phone prefix"> </i>
+                    <input id="icon_telephone" type="text" required name="tel" class="validate">
+                    <label for="icon_telephone">Teléfono</label>
+                  </div>
+                  <div class="input-field col m4 s12"> <i class="fa fa-envelope prefix"> </i>
+                    <input id="icon_mail" type="email" name="email" required class="validate">
+                    <label for="icon_mail">Email</label>
+                  </div>
+                  <div class="input-field col m12 s12"><i class="fa fa-dollar prefix"></i>
+                    <div class="col m3 title-radio-input s12">Tipo de Servicio</div>
+                    <div class="col m3 s4">
+                      <input name="budget" type="radio" id="budget_1" value="$10 - $25k" required class="with-gap">
+                      <label for="budget_1">Community Manager</label>
+                    </div>
+                    <div class="col m3 s4">
+                      <input name="budget" type="radio" id="budget_2" value="$25 - $50k" class="with-gap">
+                      <label for="budget_2">Páginas Web</label>
+                    </div>
+                    <div class="col m3 s4">
+                      <input name="budget" type="radio" id="budget_3" value="$50k+" class="with-gap">
+                      <label for="budget_3">Consultoria Marketing</label>
+                    </div>
+                  </div>
+                  <div class="input-field col m8 s12"><i class="fa fa-comments prefix"></i>
+                    <textarea required name="message" id="contact_message" class="materialize-textarea"></textarea>
+                    <label for="contact_message">Deja tu mensaje</label>
+                  </div>
+                  <div id="captcha1" style="padding-top: 15px" class="col m4 captcha-container"></div>
+                  <div class="input-field col m12 s12">
+                    <button type="submit" class="submit-button btn waves-effect waves-light full-width">Enviar &nbsp  <i class="fa fa-paper-plane"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo-intro">
+        <div><img src="img/logos/Logoweb.png" class="logo-change"></div>
+      </div>
+      <div class="menu-intro center-align">
+      <a href="index.html" class="index-option">Inicio</a>
+      <a href="servicios.html" class="servicios-option">Servicios</a>
+      <a href="portafolio.html" class="portafolio-option">Portafolio</a>
+      <a href="nosotros.html" class="nosotros-option">Nosotros</a></div>
+      <div class="menu-intro right-align fixed-s">
+      <a href="index.html" class="logo-menu">
+      <img src="img/logos/Logoweb.png" class="logo-change"></a>
+      <a href="index.html" class="index-option">Inicio</a>
+      <a href="servicios.html" class="servicios-option">Servicios</a>
+      <a href="portafolio.html" class="portafolio-option">Portafolio</a>
+      <a href="nosotros.html" class="nosotros-option">Nosotros</a></div>
+      
+      <video playsinline autoplay muted id="bgvid" poster="img/bg2.jpg">
+        <source src="video/video_bg_fast.mp4" type="video/mp4">
+      </video>
+
+
+
+
+
+      <div id="fullpage">
+      <section data-slide="1" id="proceso-container" class="intro-home2 valign-wrapper section">
+         <div class="container">
+          <div class="intro-text2"  >
+          <a style="text-decoration: none" href="Prospectos-Marketing.html">
+          <div class="wellv1">
+          <h2 class="blanco" >Páginas Web Profesional</h2>   
+          </div></a>
+          
+           
+         
+          <div class="alert alert-dismissible alert-success1">      
+          <strong class="lead blanco">Ideal para profesionales independientes y para la pequeñas empresas.</strong>
+          </div>
+        </div>
+        </div>
+      </section>
+
+
+    <div data-slide="2" class="slide-e section valign-wrapper">
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" >
+                    <div class="container ">
+                      <div class="row">    <!-- Services Section --></div>
+                    </div>
+                     <span class="fa-stack fa-3x">
+                        <i style="color: #232f3e" class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-desktop fa-stack-2x fa-inverse"></i>
+                    </span>
+                    <h3 class="section-heading">Diseño de Páginas Web Profesionales</h3>
+                  <p class="lead2">Nuestros expertos en Diseños y Desarrollos Web están capacitados para convertir tu proyecto más ambicioso en una realidad. ¿Deseas obtener información detallada sobre este servicio? Contactanos sin compromiso.</p> 
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<section class="section servicios-container2" style="background-color:rgba(72,163,198,0.5)" >
+<span class="black-opacity hide-on-med-and-up"></span>
+<div class="row" >
+  <div class="col s12" >
+    <div class="row" >                     
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col m6 col-md-6 offset-m6 service-row s12">
+                      <div class="panel-group" id="panel-110328">
+
+                        <div class="panel pa1nel-default offset-m6 service-row s12">
+                          <div class="pan1el-heading">
+                             <div class="panel-title collapsed col m9 s12 center-align service-title-container" style="color:white;font-size: 1em;cursor: pointer;" data-toggle="collapse" data-parent="#panel-110328" href="#panel-element-680877"><span class="fa-stack">
+                        <i style="color: #232f3e" class="fa fa-circle"></i>
+                        <i class="fa fa-desktop fa-inverse"></i>
+                        </span> ¿Cómo son?</div>
+                          </div>
+                          <div id="panel-element-680877" class="panel-collapse collapse col m9 s12 center-align ">
+                            <div class="panel-body parrafos" >
+                              Son páginas web compuestas por un número ideal de elementos adaptados a su requerimientos y cuya principal función es ampliar la exposición de su negocio en Internet.<br>
+                              El diseño y programación conlleva un coste justo y planes adaptados a su presupuesto.<br>
+                        
+                            </div>
+                          </div>
+                      </div>
+
+                        <div class="panel pan1el-default offset-m6 service-row s12">
+                          <div class="pan1el-heading">
+                             <div class="panel-title collapsed col m9 s12 center-align service-title-container" style="color:white;font-size: 1em;cursor: pointer;" data-toggle="collapse" data-parent="#panel-110328" href="#panel-element-847769"><span class="fa-stack">
+                        <i style="color: #232f3e" class="fa fa-circle"></i>
+                        <i class="fa fa-desktop fa-inverse"></i>
+                        </span> ¿Cual es su aporte?</div>
+                          </div>
+                          <div id="panel-element-847769" class="panel-collapse collapse col m9 s12 center-align ">
+                            <div class="panel-body parrafos">
+                              Ideal para profesionales y pequeñas empresas que deseen ampliar en Internet su abanico de clientes, es una web netamente informativa bien detallada de todos sus productos y servicios,<strong> poseen características especiales que hacen emerger el sitio web en los principales buscadores de internet.</strong><br>
+                        
+                            </div>
+                          </div>
+                        </div>
+
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+    </div>
+  </div>
+</div> 
+</section>
+
+<section class="section servicios-container" style="background-color:rgba(72,163,198,0.5)" >
+<span class="black-opacity hide-on-med-and-up"></span>
+<div class="row" >
+  <div class="col s12" >
+    <div class="row" >                     
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col m6 col-md-6 offset-m6 service-row s12">
+                      <div class="panel-group" id="panel-110329">
+
+                        <div class="panel pa1nel-default offset-m6 service-row s12">
+                          <div class="pan1el-heading">
+                             <div class="panel-title collapsed col m9 s12 center-align service-title-container" style="color:white;font-size: 1em;cursor: pointer;" data-toggle="collapse" data-parent="#panel-110329" href="#panel-element-680878"><span class="fa-stack">
+                        <i style="color: #232f3e" class="fa fa-circle"></i>
+                        <i class="fa fa-desktop fa-inverse"></i>
+                        </span> ¿Que ofrecemos?</div>
+                          </div>
+                          <div id="panel-element-680878" class="panel-collapse collapse col m9 s12 center-align ">
+                            <div class="panel-body parrafos"> 
+                              En Generación Digital te ofrecemos este tipo de Paginas Web a un precio adaptado, por debajo a los precios del mercado y con acabados profesionales. Como garantía adicional, todos nuestros trabajos están garantizados con un contrato previo y la posterior factura de los servicios que te ofrecemos.<br>
+                        
+                            </div>
+                          </div>
+                      </div>
+
+                        <div class="panel pan1el-default offset-m6 service-row s12">
+                          <div class="pan1el-heading">
+                             <div class="panel-title collapsed col m9 s12 center-align service-title-container" style="color:white;font-size: 1em;cursor: pointer;" data-toggle="collapse" data-parent="#panel-110329" href="#panel-element-847770"><span class="fa-stack">
+                        <i style="color: #232f3e" class="fa fa-circle"></i>
+                        <i class="fa fa-desktop fa-inverse"></i>
+                        </span> ¿Son adaptables?</div>
+                          </div>
+                          <div id="panel-element-847770" class="panel-collapse collapse col m9 s12 center-align ">
+                            <div class="panel-body parrafos" >
+                              Todos nuestros productos están preparados para.<br><i style="color: #232f3e" class="fa fa-circle"></i>
+                              <i class="fa fa-desktop fa-inverse"></i><i style="color: #232f3e" class="fa fa-circle"></i>
+                              <i class="fa fa-desktop fa-inverse"></i><i style="color: #232f3e" class="fa fa-circle"></i>
+                              <i class="fa fa-desktop fa-inverse"></i>
+
+
+                        
+                            </div>
+                          </div>
+                        </div>
+
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+    </div>
+  </div>
+</div> 
+</section>
+
+
+
+<section class="section servicios-container2" style="background-color:rgba(72,163,198,0.5)" >
+<span class="black-opacity hide-on-med-and-up"></span>
+<div class="row" >
+  <div class="col s12" >
+    <div class="row" >                     
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col m6 col-md-6 offset-m6 service-row s12">
+                      <div class="panel-group" id="panel-110">
+
+                        <div class="panel pa1nel-default offset-m6 service-row s12">
+                          <div class="pan1el-heading">
+                             <div class="panel-title collapsed col m9 s12 center-align service-title-container" style="color:white;font-size: 1em;cursor: pointer;" data-toggle="collapse" data-parent="#panel-110" href="#panel-element-680"><span class="fa-stack">
+                        <i style="color: #232f3e" class="fa fa-circle"></i>
+                        <i class="fa fa-desktop fa-inverse"></i>
+                        </span>Exclusivo y profesional</div>
+                          </div>
+                          <div id="panel-element-680" class="panel-collapse collapse col m9 s12 center-align ">
+                            <div class="panel-body parrafos" >
+                               ponemos a su servicio expertos profesionales que crearan un diseño web único y ajustado a su imagen corporativa o personal, respetando su logotipo, colores de empresa, tipografía y espíritu comunicativo. <br>
+                        
+                            </div>
+                          </div>
+                      </div>
+
+                        <div class="panel pan1el-default offset-m6 service-row s12">
+                          <div class="pan1el-heading">
+                             <div class="panel-title collapsed col m9 s12 center-align service-title-container" style="color:white;font-size: 1em;cursor: pointer;" data-toggle="collapse" data-parent="#panel-110" href="#panel-element-847"><span class="fa-stack">
+                        <i style="color: #232f3e" class="fa fa-circle"></i>
+                        <i class="fa fa-desktop fa-inverse"></i>
+                        </span> Navegabilidad</div>
+                          </div>
+                          <div id="panel-element-847" class="panel-collapse collapse col m9 s12 center-align ">
+                            <div class="panel-body parrafos">
+                              Dotaremos a su página web de una navegación intuitiva y funcional. De manera, que el visitante pueda acceder a sus productos y servicios cómodamente y sin complicaciones.<br>
+                        
+                            </div>
+                          </div>
+                        </div>
+
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+    </div>
+  </div>
+</div> 
+</section>
+
+
+
+
+<section class="section servicios-container" style="background-color:rgba(72,163,198,0.5)" >
+<span class="black-opacity hide-on-med-and-up"></span>
+<div class="row" >
+  <div class="col s12" >
+    <div class="row" >                     
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col m6 col-md-6 offset-m6 service-row s12">
+                      <div class="panel-group" id="panel-329">
+
+                        <div class="panel pa1nel-default offset-m6 service-row s12">
+                          <div class="pan1el-heading">
+                             <div class="panel-title collapsed col m9 s12 center-align service-title-container" style="color:white;font-size: 1em;cursor: pointer;" data-toggle="collapse" data-parent="#panel-329" href="#panel-element-878"><span class="fa-stack">
+                        <i style="color: #232f3e" class="fa fa-circle"></i>
+                        <i class="fa fa-desktop fa-inverse"></i>
+                        </span> Optimización de Carga</div>
+                          </div>
+                          <div id="panel-element-878" class="panel-collapse collapse col m9 s12 center-align ">
+                            <div class="panel-body parrafos"> 
+                              Desarrollo de Páginas Web Optimizadas, para que su carga sea lo más rápida posible. Además, de añadir todo el soporte que permita una correcta indexación en los motores de búsqueda.<br>
+                        
+                            </div>
+                          </div>
+                      </div>
+
+                        <div class="panel pan1el-default offset-m6 service-row s12">
+                          <div class="pan1el-heading">
+                             <div class="panel-title collapsed col m9 s12 center-align service-title-container" style="color:white;font-size: 1em;cursor: pointer;" data-toggle="collapse" data-parent="#panel-329" href="#panel-element-770"><span class="fa-stack">
+                        <i style="color: #232f3e" class="fa fa-circle"></i>
+                        <i class="fa fa-desktop fa-inverse"></i>
+                        </span>Comunicación</div>
+                          </div>
+                          <div id="panel-element-770" class="panel-collapse collapse col m9 s12 center-align ">
+                            <div class="panel-body parrafos" >
+                              Optimización básica para ser encontrado por los buscadores mas usados como Google y Yahoo. Formularios efectivos para recibir correos o solicitudes de presupuesto.<br><i style="color: #232f3e" class="fa fa-circle"></i>
+                              <i class="fa fa-desktop fa-inverse"></i><i style="color: #232f3e" class="fa fa-circle"></i>
+                              <i class="fa fa-desktop fa-inverse"></i><i style="color: #232f3e" class="fa fa-circle"></i>
+                              <i class="fa fa-desktop fa-inverse"></i>
+
+
+                        
+                            </div>
+                          </div>
+                        </div>
+
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+    </div>
+  </div>
+</div> 
+</section>
+
+
+   <div data-slide="4" class="slide-e section valign-wrapper">
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" >
+                    <div class="container ">
+                      <div class="row">    <!-- Services Section --></div>
+                    </div>
+                     <span class="fa-stack fa-3x">
+                        <i style="color: #232f3e" class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-desktop fa-stack-2x fa-inverse"></i>
+                    </span>
+                    <h3 class="section-heading">¿Cómo das a conocer tu sitio Web?</h3>
+                  <p class="lead2">En <strong>Generación Digital</strong> te ofrecemos un servicio de confeccionamiento para que tu página aparecezca en las búsquedas locales de Google de forma natural te asesoramos en el manejo de anuncios con la plataforma <strong>Google Adwords.</strong> <br>
+                  <br>
+                  </p> 
+                  <div >
+                  <a href="http://eepurl.com/bJdxbH" target="_blank" class="btn btn-secundary"><i class="fa fa-envelope-o fa-4x"></i> Quiero una Propuesta</a>   
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+        <section id="contacto-cotizacion" data-slide="4" class="slide section">   
+            <div class="section2" >
+             <div class="container">
+                        <div class="row wrapper">
+                          <div class="col-lg-12 text-center" >
+                               <div id="mc_embed_signup" >
+                                    <form class="wellc-solid centrar validate" action="//gendigital.us1.list-manage.com/subscribe/post?u=78559f41c7ffaeefd575a6538&amp;id=654e336ef9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" >
+                                                                <!-- <div class="wellc centrar col-md-4"> -->
+                                    <p class="lead blanco centrar">¿Te gustan las novedades? </p>
+                                    <p class="lead2 blanco centrar">Recibe nuestros boletines mensuales y sé el primero en enterarte de nuestras nuevas promociones, noticias y servicios en el mundo digital. ¡Anótate!</p>
+                                    <div class="form-group">
+                                    <input style="-webkit-appearance: textfield;background-color: white;-webkit-rtl-ordering: logical;-webkit-user-select: text;cursor: auto;padding: 1px;
+                border-width: 2px;border-style: inset; border-color: initial;border-image: initial; height: 34px;" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Escribe un correo válido *" ><button type="submit" value="Enviar" name="subscribe" id="mc-embedded-subscribe">Enviar Correo</button>
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>    
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_78559f41c7ffaeefd575a6538_8a46eeb831" tabindex="-1" value=""></div>
+                                    </form>
+                                 </div>   
+                            </div>
+                        </div>
+            </div>
+            </div>
+        </section>
+</div>
+
+      <footer>
+         <div class="row">
+          <div class="col m12 center-align hide-on-med-and-down">
+                  
+            Tel: +(58) 412 204 9872 | servicios@gendigital.com.ve
+          </div>
+          <div class="social-icons-wrapper">
+          <a href="https://www.facebook.com/Generaciondigital.ve" target="_blank" class="social-icon-footer"><i class="fa fa-facebook"> </i></a>
+          <a href="https://twitter.com/gen_digital_ve" target="_blank" class="social-icon-footer"><i class="fa fa-twitter"> </i></a>
+
+          <a href="https://www.instagram.com/generaciondigital/" target="_blank" class="social-icon-footer"><i class="fa fa-instagram"> </i></a>
+          
+         <a href="https://plus.google.com/u/0/+GendigitalVeplus" target="_blank" class="social-icon-footer"><i class="fa fa-google-plus"> </i></a>
+         <a href="https://github.com/jvalderrama2602" target="_blank" class="social-icon-footer"><i class="fa fa-github"> </i></a>
+
+
+          </div>
+          <div class="privacy-terms">2016 Geneneración Digital ©. | <a href="#" target="_blank">Políticas de privacidad </a></div>
+        </div>
+      </footer>
+    </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--<script src="1js/jquery.js"></script>
+    <script src="1js/jqueryscroll.js"></script>-->
+    <script src="js/fullPage.js"></script>
+    <script src="js/materialize.js"></script>
+    <!--<script src="https://use.fontawesome.com/e5b369f12b.js"></script>-->
+    <script src="js/transit.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+
+
+    <link href="css/gendigital/flatly.min.css" rel="stylesheet"> 
+    <!--<link href="css/1agency.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- jQuery -->
+    <!-- <script src="js/jquery.js"></script> -->
+     <!--<script src="js/1jquery.min.js"></script>-->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript 
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>-->
+    <!--<script src="js/cbpAnimatedHeader.js"></script> -->
+    <script src="js/agency.js"></script> 
+  </body>
+ 
+</html>
