@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Handlebars: Helpers de bloque</title>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script id="mi-plantilla" type="text/x-handlebars-template">
+	  	<h1>{{apellidos}}, {{nombre}}</h1>
+	  	<p>{{#negrita}}Edad: {{edad}}{{/negrita}}</p>
+	  	<h2>Histórico de salarios:</h2>	
+	  	{{#historico salarios}}
+	  		<dt>Año: {{anio}}</dt>
+	  		<dd>Max: {{salarioMaximo importes}}€ / Min: {{salarioMinimo importes}}€ / Promedio: {{salarioPromedio importes}}€</dd>
+	  	{{/historico}}
+
+	  	{{!--
+	  	<dl class="dl-horizontal">
+	  	{{#each salarios}}
+	  		<dt>{{anio}}</dt>
+	  		<dd>Max: {{salarioMaximo importes}}€ / Min: {{salarioMinimo importes}}€ / Promedio: {{salarioPromedio importes}}€</dd>
+	  	{{/each}}
+	  	</dl>
+	  	--}}
+	</script>
+</head>
+<body>
+
+	<div id="contenedor"></div>
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/handlebars-v2.0.0.js"></script>
+	<script src="js/helpers.js"></script>
+	<script src="js/blockhelpers.js"></script>
+
+	<script>
+		$(document).ready(function() {
+
+			var empleado = {
+					nombre: 'Marcos',
+					apellidos: 'Gonzalez Sancho',
+					edad: '22',
+					salarios: [
+						{ anio: '2013', importes:[1350,1500,1500,1500,1500,2000,1500,1500,1500,1500,1500,1500,2000]},
+						{ anio: '2012', importes:[1200,1350,1350,1350,1350,1500,1350,1350,1350,1350,1350,1350,1500]},
+						{ anio: '2011', importes:[1100,1200,1200,1200,1200,1350,1200,1200,1200,1200,1200,1200,1350]},
+						{ anio: '2010', importes:[900,1100,1100,1100,1100,1200,1100,1100,1100,1100,1100,1100,1200]},
+					]
+				};		
+
+			var source   = $("#mi-plantilla").html();		
+			var plantilla = Handlebars.compile(source);
+			
+			$('#contenedor').html( plantilla( empleado ) );
+		})
+	</script>
+</body>
+</html>
