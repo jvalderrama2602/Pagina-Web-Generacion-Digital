@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Handlebars: Qué son los helpers</title>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script id="mi-plantilla" type="text/x-handlebars-template">
+	  	<h1>{{apellidos}}, {{nombre}}</h1>
+	  	<p>Edad: {{edad}}</p>
+	  	<p>Salario: {{salario}}, Extras: {{extras}}</p>
+	  	<strong>{{salarioTotal this}}</strong>
+	</script>
+</head>
+<body>
+
+	<div id="contenedor"></div>
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/handlebars-v2.0.0.js"></script>
+	<script src="js/helpers.js"></script>
+
+	<script>
+
+		$(document).ready(function() {
+
+			var empleado = {
+					nombre: 'Marcos',
+					apellidos: 'Gonzalez Sancho',
+					edad: '22',
+					salario: 1500,
+					extras: 300
+				};		
+
+			var source   = $("#mi-plantilla").html();		
+			var plantilla = Handlebars.compile(source);
+			
+			$('#contenedor').html( plantilla( empleado ) );
+		})
+	</script>
+</body>
+</html>
