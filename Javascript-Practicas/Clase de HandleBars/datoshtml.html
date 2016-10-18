@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Handlebars uso basico</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Plantilla -->
+	<script id="mi-plantilla" type="text/x-handlebars-template">
+		<p>{{usuario}} - {{{enlaceEliminar}}}</p>
+		
+
+	</script>	
+
+
+
+</head>
+<body>
+	<div id="contenedor"></div>
+
+
+
+
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/handlebars-v2.0.0.js"></script>
+
+
+	<!-- compilar handlebar-->
+	<script>
+		$(document).ready(function(){
+				//obtengo la plantilla
+				var origen=$('#mi-plantilla').html();
+				var plantilla=Handlebars.compile(origen);
+				//creando objetos
+				var enlace={usuario:'Carlos',enlaceEliminar:'<a href="#">Eliminar</a>'};
+
+				//toma los objetos
+				$('#contenedor').html(plantilla(enlace));
+				//toma el array
+				
+		})
+
+
+
+	</script>
+</body>
