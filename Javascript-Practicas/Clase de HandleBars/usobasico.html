@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Handlebars uso basico</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<script id="mi-plantilla" type="text/x-handlebars-template">
+		HandleBars funcionando
+
+
+	</script>	
+
+
+
+</head>
+<body>
+	<div id="contenedor"></div>
+
+
+
+
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/handlebars-v2.0.0.js"></script>
+
+
+	<!-- compilar handlebar-->
+	<script>
+		window.onload=function(){
+			var contenedor;
+			var origen;
+			var plantilla;
+
+
+		contenedor=document.getElementById('contenedor');
+		origen=document.getElementById('mi-plantilla').innerHTML;
+		plantilla=Handlebars.compile(origen);
+		contenedor.innerHTML=plantilla();
+
+
+
+		}
+
+
+
+	</script>
+</body>
+
+
+
+
+</html>
