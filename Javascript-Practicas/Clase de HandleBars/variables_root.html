@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Handlebars: Variable @root</title>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script id="mi-plantilla" type="text/x-handlebars-template">
+	  	<h1>{{apellidos}}, {{nombre}}</h1>
+	  	<p>Edad: {{edad}}</p>
+	  	<h2>En la red:</h2>
+	  	<ul class="list-unstyled">
+	  	<p>@root: {{@root.nombre}} / {{this.nombre}}</p>
+	  	{{#each social}}
+	  		<li><a href="{{url}}"><span class="glyphicon glyphicon-chevron-right"></span> {{nombre}}</a> ({{@index}} - {{@root.nombre}} / {{this.nombre}}) </li>
+	  	{{/each}}
+	  	</ul>
+	</script>
+</head>
+<body>
+
+	<div id="contenedor"></div>
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/handlebars-v2.0.0.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+
+			var registro = {
+					nombre: 'José',
+					apellidos: 'Valderrama',
+					edad: '37',
+					social: [
+						{ nombre: 'twitter', url: 'v4ld3rr4m4'},
+						{ nombre: 'facebook', url: 'https://facebook.com/valderramaj'},
+						{ nombre: 'web', url: 'http://www.gendigital.com.ve'},
+						{ nombre: 'blog', url: 'http://www.gendigital.com.ve/blog/'}
+					]
+				};		
+
+			var source   = $("#mi-plantilla").html();		
+			var plantilla = Handlebars.compile(source);
+			
+			$('#contenedor').html( plantilla( registro ) );
+		})
+	</script>
+</body>
+</html>
