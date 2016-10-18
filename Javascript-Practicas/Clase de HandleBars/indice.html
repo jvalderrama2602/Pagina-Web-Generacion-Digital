@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Handlebars: Uso básico</title>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script id="lista-indice" type="text/x-handlebars-template">
+	  	<h1>Índice</h1>
+	  	<ul class="list-unstyled">
+	  	{{#each elementos}}
+	  		<li><a href="{{enlace}}"><span class="glyphicon glyphicon-ok"></span> {{nombre}}</a></li>
+	  	{{/each}}
+	  	</ul>
+	</script>
+</head>
+
+<body>
+	<div id="contenedor"></div>
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/handlebars-v2.0.0.js"></script>
+
+	<script>
+		var indice = { elementos:[
+			{nombre:'El problema', enlace:'problema.html'}, 
+			{nombre:'Expresiones, sintaxis básica', enlace:'expresiones.html'}, 
+			{nombre:'Uso básico', enlace:'usobasico.html'}, 
+			{nombre:'Datos o contexto', enlace:'datos.html'}, 
+			{nombre:'Comentarios', enlace:'comentarios.html'}, 
+			{nombre:'Datos con contenido HTML', enlace:'datoshtml.html'}, 
+			{nombre:'Mi primera plantilla', enlace:'miprimeraplantilla.html'}, 
+			{nombre:'Estructuras condicionales', enlace:'condicional.html'},
+			{nombre:'Estructuras iterativas', enlace:'index.html'},
+			{nombre:'Propiedades anidadas', enlace:'propiedadesanidadas.html'},
+			{nombre:'Variables @first y @last', enlace:'variables_first_last.html'},
+			{nombre:'Variables @index y @key', enlace:'variables_index_key.html'},
+			{nombre:'Variable @root', enlace:'variables_root.html'},
+			{nombre:'Qué son los helpers', enlace:'quesonloshelpers.html'},
+			{nombre:'Trabajando con helpers', enlace:'helper.html'},
+			{nombre:'Helpers de bloque', enlace:'blockhelper.html'},
+			{nombre:'Partials', enlace:'partial.html'}
+			]
+		};
+
+		$(document).ready(function() {
+			var origen;
+			var plantilla;
+
+			origen = document.getElementById('lista-indice').innerHTML;
+			plantilla = Handlebars.compile(origen);
+
+			$('#contenedor').html( plantilla(indice) );
+		});
+	</script>
+</body>
+</html>
