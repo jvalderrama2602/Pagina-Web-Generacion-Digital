@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Handlebars uso basico</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/pelicula.css">
+
+	<!-- Plantilla -->
+	<script id="mi-plantilla" type="text/x-handlebars-template">
+		<div class="film">
+			<div class="poster">
+				<img src="{{cartel}}" alt="{{titulo}}"/>
+			</div>
+			<div class="info">
+				<h2>{{titulo}} {{anio}}</h2>
+				<p>Duración: {{duracion}} min.</p>
+				<h3>Sinopsis</h3>
+				<p>{{sinopsis}}</p>
+				<p>{{{fichacompleta}}}</p>
+			</div>
+			<br class="clearfix" />
+		</div>
+		
+
+	</script>	
+
+
+
+</head>
+<body>
+	<div id="contenedor"></div>
+
+
+
+
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/handlebars-v2.0.0.js"></script>
+
+
+	<!-- compilar handlebar-->
+	<script>
+		$(document).ready(function(){
+				//diseño de objeto
+				var pelicula={
+					titulo:'Cadena Perpetua',
+					anio:1994,
+					duracion:142,
+					sinopsis:'Dos hombres encarcelados durante años, que encuentran consuelo y redención a través de actos de decencia común.',
+					cartel: 'https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY1000_CR0,0,672,1000_AL_.jpg',
+					fichacompleta:'<a href="http://www.imdb.com/title/tt0111161/?ref_=tt_mv_close">Ver ficha completa</a>'
+
+
+
+				};
+
+				var origen=$('#mi-plantilla').html();
+				var plantilla=Handlebars.compile(origen);
+
+				$('#contenedor').html(plantilla(pelicula));
+
+				
+				
+		})
+
+
+
+	</script>
+</body>
