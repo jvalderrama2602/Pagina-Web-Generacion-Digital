@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Handlebars uso basico</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/pelicula.css">
+
+	<!-- Plantilla -->
+	<script id="mi-plantilla" type="text/x-handlebars-template">
+		<h1>Hola {{nick}}</h1>
+		{{#if dispositivo}}
+			<p>Te has conectado desde: {{dispositivo}}</p>
+		{{else}}
+			<p>No hemos identificado desde donde te conectas</p>
+		{{/if}}
+
+		{{#unless dispositivo}}
+			<p>No hemos identificado desde donde te conectas</p>
+		{{else}}
+			<p>Te has conectado desde: {{dispositivo}}</p>
+		{{/unless}}
+
+	</script>	
+
+
+
+</head>
+<body>
+	<div id="contenedor"></div>
+
+
+
+
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/handlebars-v2.0.0.js"></script>
+
+
+	<!-- compilar handlebar-->
+	<script>
+		$(document).ready(function(){
+				
+
+				var origen=$('#mi-plantilla').html();
+				var plantilla=Handlebars.compile(origen);
+
+
+				var usuarioDispositivo={nick:'Carlos',dispositivo:'Web'};
+
+				var usuarioSinIdentificar={nick:'Carlos'};
+
+				var usuarioSinDefinir={nick:'Carlos',dispositivo:''};
+
+				$('#contenedor').html(plantilla(usuarioDispositivo));
+
+				
+				
+		})
+
+
+
+	</script>
+</body>
