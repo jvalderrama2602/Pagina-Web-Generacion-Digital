@@ -10,6 +10,7 @@
 	<script id="lista-indice" type="text/x-handlebars-template">
 	  	<h1>Índice</h1>
 	  	<ul class="list-unstyled">
+	  	{{!--Leerá el array}}
 	  	{{#each elementos}}
 	  		<li><a href="{{enlace}}"><span class="glyphicon glyphicon-ok"></span> {{nombre}}</a></li>
 	  	{{/each}}
