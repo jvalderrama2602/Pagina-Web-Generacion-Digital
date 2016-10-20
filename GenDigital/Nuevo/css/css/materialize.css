@@ -5534,6 +5534,14 @@ button.btn-floating {
   width: 120px !important;
 }
 
+
+          input[type=email] .formulario02{
+
+            -webkit-appearance: textfield;background-color: white;-webkit-rtl-ordering: logical;-webkit-user-select: text;cursor: auto;padding: 1px;
+                border-width: 2px;border-style: inset; border-color: initial;border-image: initial; height: 34px;
+
+
+          }
 .chips .input:focus {
   border: 0 !important;
   box-shadow: none !important;

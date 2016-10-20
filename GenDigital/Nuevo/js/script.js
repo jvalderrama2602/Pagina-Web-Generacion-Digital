@@ -158,7 +158,7 @@ $(document).ready(function(){
 
 
 			if(index == 3 && direction == "down"){
-				$(".fixed-s a").transition({ color: "black" });
+				$(".fixed-s a").transition({ color: "white" });
 			}
 
 			if(index == 4 && direction == "up"){
